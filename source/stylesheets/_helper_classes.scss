@@ -1,0 +1,33 @@
+.list-unstyled {
+  li {
+    list-style: none;
+  }
+}
+
+.list-horizontal {
+  @include horizontal-list;
+}
+
+.dark-background {
+  @include dark-background;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.fixed {
+  position: fixed;
+}

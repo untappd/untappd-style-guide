@@ -1,0 +1,58 @@
+body {
+  font-size: 15px;
+  font-family: $font-family-base;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+  color: $darkest-gray;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+
+  // For style guide only
+  span {
+    color: $darker-gray;
+    font-size: 12px;
+    font-style: normal;
+    text-transform: none;
+  }
+}
+
+h1 {
+  border-bottom: 1px solid $light-gray;
+  font-size: 30px;
+  line-height: 48px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 21px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+p {
+  color: $darker-gray;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.small-text {
+  font-size: 12px;
+  line-height: 18px;
+}

@@ -1,0 +1,276 @@
+---
+title: Untappd UX Style Guide
+---
+
+<div class="main">
+  <section id="typography">
+    <h1>Typography</h1>
+    <div class="subsection">
+      <h3>Headings</h3>
+      <h1>Main Heading <span>(h1)</span></h1>
+      <h2>Subpage Title <span>(h2)</span></h2>
+      <h3>Section Header <span>(h3)</span></h3>
+      <h4>Sub Section Heading <span>(h4)</span></h4>
+      <h5>Body Copy Heading <span>(h5)</span></h5>
+      <a class="btn-secondary btn-small code-trigger">Show code</a>
+      <figure class="code hidden">
+        <pre><code class="language-ruby">
+&lt;h1&gt;…&lt;/h1&gt;
+&lt;h2&gt;…&lt;/h2&gt;
+&lt;h3&gt;…&lt;/h3&gt;
+&lt;h4&gt;…&lt;/h4&gt;
+&lt;h5&gt;…&lt;/h5&gt;
+        </code></pre>
+      </figure>
+    </div>
+
+    <div class="subsection">
+      <h3>Paragraphs</h3>
+      <h4>Default</h4>
+      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</p>
+
+      <h4>Small Paragraph</h4>
+      <p class="small-text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</p>
+
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">
+&lt;p class="small-text"&gt;…&lt;/p&gt;
+          </code></pre>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="buttons-links">
+    <h1>Buttons & Links</h1>
+    <div class="subsection">
+      <h3>Anchor Tags</h3>
+      <a href="#">This is an anchor tag</a>
+      <div class="dark-background">
+        <a href="#">This is an anchor tag</a>
+      </div>
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">
+&lt;a href="path"&gt;…&lt;/a&gt;
+&lt;div class="dark-background"&gt;
+  &lt;a href="path"&gt;…&lt;/a&gt;
+&lt;/div&gt;
+          </code></pre>
+        </figure>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Buttons</h3>
+      <div class="margin-small">
+        <button>Default Button</button>
+        <button class="btn-primary">Primary Button</button>
+        <button class="btn-secondary">Secondary Button</button>
+        <button class="btn-save">Save Button</button>
+        <button class="text-link">Text Link</button>
+      </div>
+
+      <h3>Small Buttons</h3>
+      <button class="btn-small">Default Button</button>
+      <button class="btn-primary btn-small">Primary Button</button>
+      <button class="btn-secondary btn-small">Secondary Button</button>
+      <button class="btn-save btn-small">Save Button</button>
+      <button class="text-link btn-small">Text Link</button>
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">
+## Buttons
+&lt;button&gt;Default Button&lt;/button&gt;
+&lt;button class="btn-primary"&gt;Default Button&lt;/button&gt;
+&lt;button class="btn-secondary"&gt;Default Button&lt;/button&gt;
+&lt;button class="btn-save"&gt;Default Button&lt;/button&gt;
+&lt;button class="text-link"&gt;Default Button&lt;/button&gt;
+
+## Small Buttons
+&lt;button class="btn-small"&gt;Default Button&lt;/button&gt;
+&lt;button class="btn-primary btn-small"&gt;Default Button&lt;/button&gt;
+&lt;button class="btn-secondary btn-small"&gt;Default Button&lt;/button&gt;
+&lt;button class="btn-save btn-small"&gt;Default Button&lt;/button&gt;
+&lt;button class="text-link btn-small"&gt;Default Button&lt;/button&gt;
+          </code></pre>
+      </figure>
+    </div>
+  </section>
+
+  <section id="form-elements">
+    <h1>Forms</h1>
+    <div class="subsection">
+      <h3>Horizontal Form</h3>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-save">Submit</button>
+          <!-- Optional cancel link -->
+          <a class="text-link" href="#">Cancel</a>
+        </div>
+      </form>
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">
+&lt;form&gt;
+&lt;div class="form-group"&gt;
+  &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+  &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+  &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+  &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;
+  &lt;input type="file" id="exampleInputFile"&gt;
+  &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox"&gt; Check me out
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-actions"&gt;
+  &lt;button type="submit" class="btn-save"&gt;Submit&lt;/button&gt;
+  &lt;a class="text-link" href="#"&gt;Cancel&lt;/a&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+          </code></pre>
+        </figure>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Horizontal Form</h3>
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-save">Log in</button>
+          <!-- Optional cancel link -->
+          <a class="text-link" href="#">Cancel</a>
+        </div>
+      </form>
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-actions"&gt;
+    &lt;button type="submit" class="btn-save"&gt;Log in&lt;/button&gt;
+    ## Optional cancel link
+    &lt;a class="text-link" href="#"&gt;Cancel&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+          </code></pre>
+        </figure>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Inline Errors</h3>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control form-error" id="exampleInputEmail1">
+        <p class="help-block error-text">Email is a required field.</p>
+      </div>
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">
+&lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+&lt;input type="email" class="form-control form-error" id="exampleInputEmail1"&gt;
+&lt;p class="help-block error-text"&gt;Email is a required field.&lt;/p&gt;
+          </code></pre>
+        </figure>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Form Elements</h3>
+      <div class="margin-small">
+        <h4>Checkboxes</h4>
+        <input type="checkbox" id="c1" name="cc" checked />
+        <label for="c1"><span></span>Checkbox</label>
+        <br />
+        <input type="checkbox" id="c2" name="cc" />
+        <label for="c2"><span></span>Checkbox</label>
+        <br />
+        <input type="checkbox" id="c3" name="cc" disabled />
+        <label for="c3"><span></span>Disabled checkbox</label>
+      </div>
+
+      <div class="margin-small">
+        <h4>Radio Buttons</h4>
+        <input type="radio" id="r1" name="cc" checked />
+        <label for="r1"><span></span>Radio Button</label>
+        <br />
+        <input type="radio" id="r2" name="cc" />
+        <label for="r2"><span></span>Radio Button</label>
+        <br />
+        <input type="radio" id="r3" name="cc" disabled />
+        <label for="r3"><span></span>Disabled radio button</label>
+      </div>
+    </div>
+    <div class="margin-small">
+      <a class="btn-secondary btn-small code-trigger">Show code</a>
+      <figure class="code hidden">
+        <pre><code class="language-ruby">
+## Checkboxes
+&lt;input type="checkbox" id="c1" name="cc" checked /&gt;
+&lt;label for="c1"&gt;&lt;span&gt;&lt;/span&gt;Checkbox&lt;/label&gt;
+&lt;input type="checkbox" id="c2" name="cc" /&gt;
+&lt;label for="c2"&gt;&lt;span&gt;&lt;/span&gt;Checkbox&lt;/label&gt;
+&lt;input type="checkbox" id="c3" name="cc" disabled /&gt;
+&lt;label for="c3"&gt;&lt;span&gt;&lt;/span&gt;Disabled checkbox&lt;/label&gt;
+
+## Radio Buttons
+&lt;input type="radio" id="r1" name="cc" checked /&gt;
+&lt;label for="r1"&gt;&lt;span&gt;&lt;/span&gt;Radio Button&lt;/label&gt;
+&lt;input type="radio" id="r2" name="cc" /&gt;
+&lt;label for="r2"&gt;&lt;span&gt;&lt;/span&gt;Radio Button&lt;/label&gt;
+&lt;input type="radio" id="r3" name="cc" disabled /&gt;
+&lt;label for="r3"&gt;&lt;span&gt;&lt;/span&gt;Disabled radio button&lt;/label&gt;
+        </code></pre>
+    </figure>
+  </div>
+  </section>
+</div>
