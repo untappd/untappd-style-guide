@@ -1,5 +1,20 @@
+.form-control, select {
+  &:hover {
+    border-color: shade($light-gray, 10%)
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px shade($light-gray, 3%);
+    outline: 0;
+  }
+
+  transition: all .10s ease-in-out;
+  -moz-transition: all .10s ease-in-out;
+  -webkit-transition: all .10s ease-in-out;
+}
+
 .form-control {
-  background-color: $lightest-gray;
+  background-color: white;
   background-image: none;
   border: 1px solid $light-gray;
   border-radius: $border-radius-medium;
@@ -9,12 +24,6 @@
   margin: 0 0 10px 0;
   padding: 10px 15px;
   width: 100%;
-  transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out;
-  &:hover {
-    border-color: shade($light-gray, 10%)
-  }
 }
 
 label {
@@ -129,6 +138,9 @@ input[type=file] {
   &:hover {
     border-color: $error-color;
   }
+  &:focus {
+    box-shadow: 0 0 0 1px shade($error-color, 1%);
+  }
 }
 
 .error-text {
@@ -203,4 +215,16 @@ input[type="radio"]:disabled + label span {
   background:url('/images/check-sprite-2x.png') left -264px no-repeat;
   background-size: 24px 384px;
   cursor: not-allowed;
+}
+
+select {
+  background: url('/images/arrow-down.svg') no-repeat 90% 50%;
+  border: 1px solid $light-gray;
+  cursor: pointer;
+  font: 15px $font-family-base;
+  padding: 10px 35px 10px 15px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid $medium-gray;
+  font-weight: 600;
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid $light-gray;
+  padding: 15px;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+// Striped
+
+.table-striped {
+  tbody tr:nth-child(odd) {
+    background-color: $lightest-gray;
+  }
+}

@@ -1,10 +1,3 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+ruby+scss */
-/**
- * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
- * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
- * @author Tim  Shedor
- */
-
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
@@ -29,30 +22,18 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
+	border-radius: $border-radius-medium;
 	position: relative;
 	margin: .5em 0;
-	-webkit-box-shadow: -1px 0px 0px 0px $blue, 0px 0px 0px 1px #dfdfdf;
-	-moz-box-shadow: -1px 0px 0px 0px $blue, 0px 0px 0px 1px #dfdfdf;
-	box-shadow: -1px 0px 0px 0px $blue, 0px 0px 0px 1px #dfdfdf;
-	border-left: 10px solid $blue;
-	border-radius: $border-radius-medium;
-	background-color: #fdfdfd;
-	background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-	background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-	background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-	background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-	background-size: 3em 3em;
-	background-origin: content-box;
-	overflow: visible;
+	border: 1px solid $light-gray;
+	overflow: hidden;
 	max-height: 30em;
-	padding: 0;
+	padding: 20px;
 }
 
 code[class*="language"] {
 	max-height: inherit;
 	height: 100%;
-	padding: 0 1em;
 	display: block;
 	overflow: auto;
 }
@@ -82,26 +63,6 @@ pre[class*="language-"] {
 	white-space: normal;
 }
 
-/*pre[class*="language-"]:before,
-pre[class*="language-"]:after {
-	content: '';
-	z-index: -2;
-	display: block;
-	position: absolute;
-	bottom: 0.75em;
-	left: 0.18em;
-	width: 40%;
-	height: 20%;
-	-webkit-box-shadow: 0px 13px 8px #979797;
-	-moz-box-shadow: 0px 13px 8px #979797;
-	box-shadow: 0px 13px 8px #979797;
-	-webkit-transform: rotate(-2deg);
-	-moz-transform: rotate(-2deg);
-	-ms-transform: rotate(-2deg);
-	-o-transform: rotate(-2deg);
-	transform: rotate(-2deg);
-}
-
 :not(pre) > code[class*="language-"]:after,
 pre[class*="language-"]:after {
 	right: 0.75em;
@@ -111,7 +72,7 @@ pre[class*="language-"]:after {
 	-ms-transform: rotate(2deg);
 	-o-transform: rotate(2deg);
 	transform: rotate(2deg);
-}*/
+}
 
 .token.comment,
 .token.block-comment,
