@@ -1,3 +1,14 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 @mixin pull-left {
   float: left !important;
 }
@@ -54,4 +65,9 @@
 
 @mixin dark-background {
   background: $darkest-gray;
+}
+
+@mixin list-unstyled {
+  margin: 0;
+  padding: 0;
 }

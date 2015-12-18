@@ -213,7 +213,7 @@ title: Untappd UX Style Guide
       <h3>Form Elements</h3>
       <h4>Checkboxes</h4>
       <input type="checkbox" id="c1" name="cc" checked />
-      <label for="c1"><span></span>Checkbox</label>
+      <label for="c1"><span></span>Checkbox (checked)</label>
       <br />
       <input type="checkbox" id="c2" name="cc" />
       <label for="c2"><span></span>Checkbox</label>
@@ -223,7 +223,7 @@ title: Untappd UX Style Guide
 
       <h4>Radio Buttons</h4>
       <input type="radio" id="r1" name="cc" checked />
-      <label for="r1"><span></span>Radio Button</label>
+      <label for="r1"><span></span>Radio Button (checked)</label>
       <br />
       <input type="radio" id="r2" name="cc" />
       <label for="r2"><span></span>Radio Button</label>
@@ -259,73 +259,6 @@ title: Untappd UX Style Guide
         <a class="btn-secondary btn-small code-trigger">Show code</a>
         <figure class="code hidden">
           <pre><code class="language-ruby">&lt;select maxheight="-1" data-dojo-type="dijit/form/Select"&gt; &lt;option value=""&gt;Select an option&lt;/option&gt; &lt;option value="1"&gt;Option 1&lt;/option&gt; &lt;option value="2"&gt;Option 2&lt;/option&gt; &lt;option value="3"&gt;Option 3&lt;/option&gt;&lt;/select&gt;</code></pre>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section id="navigation">
-    <h1>Navigation</h1>
-    <div class="subsection">
-      <h3>Horzontal Navigation</h3>
-      <ul class="nav-horizontal list-horizontal">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#" class="active-link">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
-      </ul>
-
-      <h3>Vertical Navigation</h3>
-      <ul class="nav-vertical">
-        <li class="menu-header">
-          <a href="#">Heading 1</a>
-        </li>
-        <ul>
-          <li><a href="#">Subitem 1</a></li>
-          <li><a href="#">Subitem 2</a></li>
-          <li><a href="#">Subitem 3</a></li>
-        </ul>
-        <hr>
-        <li class="menu-header">
-          <a href="#" class="selected">Heading 2</a>
-        </li>
-        <ul>
-          <li><a href="#">Subitem 1</a></li>
-          <li><a href="#">Subitem 2</a></li>
-          <li><a href="#">Subitem 3</a></li>
-        </ul>
-      </ul>
-      <div class="margin-small">
-        <a class="btn-secondary btn-small code-trigger">Show code</a>
-        <figure class="code hidden">
-          <pre><code class="language-ruby">## Horizontal Navigation
-&lt;ul class="nav-horizontal list-horizontal"&gt;
-  &lt;li&gt;&lt;a href="path">Item 1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="path">Item 2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="path" class="active-link"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="path"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-## Vertical Navigation
-&lt;ul class="nav-vertical"&gt;
-  &lt;li class="menu-header"&gt;
-    &lt;a href="#"&gt;Heading 1&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Subitem 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Subitem 2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Subitem 3&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;hr&gt;
-  &lt;li class="menu-header"&gt;
-    &lt;a href="#" class="selected"&gt;Heading 2&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Subitem 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Subitem 2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Subitem 3&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/ul&gt;</code></pre>
         </figure>
       </div>
     </div>
@@ -451,6 +384,191 @@ title: Untappd UX Style Guide
 &lt;/table&gt;</code></pre>
         </figure>
       </div>
+    </div>
+  </section>
+
+  <section id="lists">
+    <h1>Lists</h1>
+    <div class="subsection">
+      <h3>Unordered List</h3>
+      <ul class="list-unstyled">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ol>
+
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">## Unordered List
+&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ul&gt;
+
+## Ordered List
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </figure>
+      </div>
+
+      <!-- <h3>Item List</h3>
+      <ul class="menu-items">
+        <li class="sortable-item clearfix">
+          <a href="#" class="move-handle pull-left">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#">
+            <img class="thumb pull-left" src="https://untappd.akamaized.net/site/beer_logos/beer-FoundersKBS.jpg" />
+            <div class="item-label pull-left">
+              <span class="name">Kentucky Breakfast Stout</span>
+              <span class="brand">Founders Brewing Co.</span>
+            </div>
+          </a>
+          <a href="#" class="delete pull-right"><img src="/images/trash-can-med-gray.svg"></a>
+        </li>
+        <li class="sortable-item clearfix">
+          <a href="#" class="move-handle pull-left">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#">
+            <img class="thumb pull-left" src="https://untappd.akamaized.net/site/beer_logos/beer-4133_04292_sm.jpeg" />
+            <div class="item-label pull-left">
+              <span class="name">Two Hearted Ale</span>
+              <span class="brand">Bell's Brewery, Inc.</span>
+            </div>
+          </a>
+          <a href="#" class="delete pull-right"><img src="/images/trash-can-med-gray.svg"></a>
+        </li>
+        <li class="sortable-item clearfix">
+          <a href="#" class="move-handle pull-left">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#">
+            <img class="thumb pull-left" src="https://untappd.akamaized.net/site/beer_logos/beer-123662_39287_sm.jpeg" />
+            <div class="item-label pull-left">
+              <span class="name">Dragon's Milk</span>
+              <span class="brand">New Holland Brewing Co.</span>
+            </div>
+          </a>
+          <a href="#" class="delete pull-right"><img src="/images/trash-can-med-gray.svg"></a>
+          <div class="expanded-item">
+            <span class="style">Stout American Imperial / Double</span> | <span class="abv">11.0 ABV</span> | <span class="ibu">31.0 IBU</span> | <span class="untappd-label">Untappd Rating:</span><span class="rating small r450"></span>
+            <p class="description small-text">What we’ve got here is an imperial stout brewed with a massive amount of coffee and chocolates, then cave-aged in oak bourbon barrels for an entire year to make sure wonderful bourbon undertones come through in the finish. Makes your taste buds squeal with delight.</p>
+            <form class="form-inline">
+              <div class="form-group">
+                <select maxheight="-1" data-dojo-type="dijit/form/Select"> <option value="">Container type</option> <option value="1">Option 1</option> <option value="2">Option 2</option> <option value="3">Option 3</option></select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Price</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Price">
+              </div>
+              <div class="form-actions">
+                <a href="#" class="text-link delete">Delete</a>
+              </div>
+            </form>
+            <a href="#" class="btn-secondary btn-small">+ Add new container</a>
+          </div>
+        </li>
+      </ul> -->
+    </div>
+  </section>
+
+  <section id="spinners">
+    <h1>Spinners</h1>
+    <div class="subsection">
+      <h3>Color spinner</h3>
+      <div class="spinner spinner-color">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+
+      <h3>Dark spinner</h3>
+      <div class="spinner spinner-dark">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+
+      <h3>Light spinner</h3>
+      <div class="dark-background">
+        <div class="spinner spinner-light">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+
+      <div class="margin-small">
+        <a class="btn-secondary btn-small code-trigger">Show code</a>
+        <figure class="code hidden">
+          <pre><code class="language-ruby">## Color Spinner
+&lt;div class="spinner spinner-color"&gt;
+  &lt;div class="bounce1"&gt;&lt;/div&gt;
+  &lt;div class="bounce2"&gt;&lt;/div&gt;
+  &lt;div class="bounce3"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+## Dark Spinner
+&lt;div class="spinner spinner-dark"&gt;
+  &lt;div class="bounce1"&gt;&lt;/div&gt;
+  &lt;div class="bounce2"&gt;&lt;/div&gt;
+  &lt;div class="bounce3"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+## Light Spinner
+&lt;div class="spinner spinner-light"&gt;
+  &lt;div class="bounce1"&gt;&lt;/div&gt;
+  &lt;div class="bounce2"&gt;&lt;/div&gt;
+  &lt;div class="bounce3"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="helper-classes">
+    <h1>Helper Classes</h1>
+    <div class="subsection">
+      <h3>Quick Floats</h3>
+      <p>Float an element to the left or right with a class.</p>
+      <pre><code class="language-ruby">## As a class
+&lt;div class="pull-left"&gt;…&lt;/div&gt;
+&lt;div class="pull-right"&gt;…&lt;/div&gt;
+
+## As a mixin
+@mixin pull-left
+@mixin pull-right</code></pre>
+
+      <h3>Clearfix</h3>
+      <p>Easily clear <code>float</code>s by adding <code>.clearfix</code> to the parent element. Can also be used as a mixin.</p>
+      <pre><code class="language-ruby">## As a class
+&lt;div class="clearfix"&gt;…&lt;/div&gt;
+
+## As a mixin
+@mixin clearfix</code></pre>
     </div>
   </section>
 </div>

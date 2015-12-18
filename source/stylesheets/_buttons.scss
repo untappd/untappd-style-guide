@@ -51,7 +51,7 @@ a {
 
 // Buttons
 
-button {
+button, .btn-default {
   background-color: $dark-gray;
   border: 1px solid $darkest-gray;
   color: white;
@@ -78,7 +78,7 @@ button {
   }
 }
 
-.btn-save {
+.btn-save, input[type="submit"] {
   background-color: $success-color;
   border: 1px solid shade($success-color, 10%);
   &:hover {

@@ -6,7 +6,7 @@ body {
 h1, h2, h3, h4, h4, h5, h6 {
   color: $darkest-gray;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 15px 0;
 
   // For style guide only
   span {
@@ -47,7 +47,7 @@ h5 {
 }
 
 p {
-  color: $darker-gray;
+  color: $medium-gray;
   font-size: 15px;
   line-height: 24px;
 }

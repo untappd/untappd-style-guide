@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
+    <title>generic-user</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Images" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-85.000000, -182.000000)">
+            <g id="generic-user" sketch:type="MSLayerGroup" transform="translate(85.000000, 182.000000)">
+                <circle id="Oval-11" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="15" cy="15" r="15"></circle>
+                <path d="M22,28.2699068 L22,22.0004203 C22,18.1378734 18.8659932,15 15,15 C11.1418733,15 8,18.1341949 8,22.0004203 L8,28.2699068 C10.0897179,29.3745369 12.4718166,30 15,30 C17.5281834,30 19.9102821,29.3745369 22,28.2699068 Z" id="Rectangle-17" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-11" fill="#D8D8D8" sketch:type="MSShapeGroup" cx="15" cy="11" r="5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

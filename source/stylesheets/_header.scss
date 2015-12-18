@@ -1,0 +1,26 @@
+.navigation {
+  background-color: $untappd-yellow;
+  width: 100%;
+
+  .navigation-wrapper {
+    @include clearfix;
+    @include outer-container;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-top: 12px;
+    img {
+      width: 150px;
+    }
+  }
+
+  .user-image {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .user {
+    color: white;
+  }
+}

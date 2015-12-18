@@ -4,14 +4,23 @@
 
 @import "mixins";
 @import "variables";
+@import "style_guide";
 @import "helper_classes";
 
 @import "sidebar";
+
+// CSS
 @import "typography";
 @import "buttons";
 @import "forms";
-@import "navigation";
 @import "tables";
+@import "lists";
+@import "ratings";
+@import "spinners";
+
+// Componets
+@import "header";
+@import "navigation";
 
 @import "prism";
 
@@ -20,47 +29,11 @@
   @include outer-container;
 
   .sidebar {
-    @include span-columns(4);
-    margin-top: 30px;
+    @include span-columns(3);
+    margin-top: 10px;
   }
 
   .main {
-    @include span-columns(8);
-  }
-
-  // For Style Guide only
-
-  pre {
-    margin: 20px 0;
-  }
-
-  section {
-    margin: 20px 0;
-  }
-
-  .subsection {
-    margin: 40px 0;
-  }
-
-  .margin-small {
-    margin: 20px 0;
-  }
-
-  .sg-nav-vertical {
-    li {
-      list-style: none;
-      margin-bottom: 5px;
-    }
-    a {
-      color: $dark-gray;
-      border: 0;
-      display: block;
-      font-size: 18px;
-      padding: 5px 0;
-      &:hover {
-        border-left: 4px solid $untappd-yellow;
-        padding-left: 15px;
-      }
-    }
+    @include span-columns(9);
   }
 }

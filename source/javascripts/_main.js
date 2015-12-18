@@ -1,37 +1,20 @@
-// $(document).ready(function () {
-//   $(".code-trigger").click(function () {
-//     $('.hidden').hide();
-//     $(this).next().toggle();
-//   });
-// });
-
 $(document).ready(function(){
-  // Show Code
-  // hide all the stuff
+  // Show code samples
   $('.code').hide();
-  // if a heading is clicked
   $('.code-trigger').on('click', function(){
-    // toggle the stuff right after it
   $(this).next().toggle();
   });
 
-  // Fix Sidebar
-  $(function() {
-    var $sidebar   = $(".sidebar"),
-        $window    = $(window),
-        offset     = $sidebar.offset(),
-        topPadding = 30;
+  // Fixed Sidebar
+  var stickyTop = $('.sg-nav-vertical').offset().top; // returns number
 
-    $window.scroll(function() {
-      if ($window.scrollTop() > offset.top) {
-          $sidebar.stop().animate({
-              marginTop: $window.scrollTop() - offset.top + topPadding
-          });
-      } else {
-          $sidebar.stop().animate({
-              marginTop: 0
-          });
-      }
-    });
+  $(window).scroll(function(){
+    var windowTop = $(window).scrollTop();
+    if (stickyTop < windowTop) {
+      $('.sg-nav-vertical').css({ position: 'fixed', top: 0 });
+    }
+    else {
+      $('.sg-nav-vertical').css('position','static');
+    }
   });
 });
