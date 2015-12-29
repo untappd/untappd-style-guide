@@ -17,4 +17,23 @@ $(document).ready(function(){
       $('.sg-nav-vertical').css('position','static');
     }
   });
+
+  // Dropdown
+  $(".dropdown-button").click(function() {
+    $(".dropdown-menu").toggleClass("show-menu");
+    $(".dropdown-menu > li").click(function(){
+      $(".dropdown-menu").removeClass("show-menu");
+    });
+    $(".dropdown-menu.dropdown-select > li").click(function() {
+      $(".dropdown-button").html($(this).html());
+    });
+  });
+
+  // Location Expander
+  var expanderTrigger = document.getElementById("location-trigger");
+  var expanderContent = document.getElementById("location-content");
+
+  $('#location-trigger').click(function(){
+    $(this).toggleClass("expander-hidden");
+  });
 });

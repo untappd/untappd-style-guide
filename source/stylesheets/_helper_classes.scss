@@ -1,19 +1,9 @@
-.list-unstyled {
-  li {
-    list-style: none;
-  }
-}
-
-.list-horizontal {
-  @include horizontal-list;
-}
-
 .dark-background {
   @include dark-background;
 }
 
 .text-center {
-  text-align: center;
+  @include text-center;
 }
 
 .pull-left {

@@ -72,3 +72,43 @@ section {
     }
   }
 }
+
+.subsection .navigation-wrapper {
+  padding: 0 15px;
+}
+
+.location-bar-inner {
+  margin: 0 15px;
+}
+
+#top {
+  -moz-box-shadow: 0 2px 5px 0 rgba($medium-gray, .5);
+  -webkit-box-shadow: 0 2px 5px 0 rgba($medium-gray, .5);
+  box-shadow: 0 2px 5px 0 rgba($medium-gray, .5);
+
+  background: $darkest-gray;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  display: block;
+  font-size:18px;
+  font-weight: 600;
+  padding-top: 11px;
+  text-align: center;
+
+  width: 50px;
+  height: 50px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  &:hover {
+    -moz-box-shadow: 0 5px 5px 0 rgba($medium-gray, .5);
+    -webkit-box-shadow: 0 5px 5px 0 rgba($medium-gray, .5);
+    box-shadow: 0 5px 5px 0 rgba($medium-gray, .5);
+
+    background: black;
+    bottom: 23px;
+  }
+}

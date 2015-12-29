@@ -1,3 +1,8 @@
+@mixin text-center {
+  text-align: center;
+}
+
+
 @mixin clearfix() {
   &:before,
   &:after {

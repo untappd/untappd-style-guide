@@ -62,7 +62,7 @@
     padding: 5px 0;
 
     .selected {
-      border-left: 2px solid $untappd-yellow;
+      border-left: 4px solid $untappd-yellow;
       font-weight: 600;
       padding: 5px 15px;
       &:hover {
@@ -75,6 +75,11 @@
       color: $dark-gray;
       font-size: 18px;
       padding: 5px 0;
+      &:hover {
+        border-left: 4px solid $untappd-yellow;
+        padding-left: 15px;
+        text-decoration: none;
+      }
     }
   }
 

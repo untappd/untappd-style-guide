@@ -8,7 +8,7 @@ title: Untappd UX Style Guide
     <div class="subsection">
       <h3>Headings</h3>
       <h1>Main Heading <span>(h1)</span></h1>
-      <h2>Subpage Title <span>(h2)</span></h2>
+      <h2>Subtitle <span>(h2)</span></h2>
       <h3>Section Header <span>(h3)</span></h3>
       <h4>Sub Section Heading <span>(h4)</span></h4>
       <h5>Body Copy Heading <span>(h5)</span></h5>
@@ -553,7 +553,7 @@ title: Untappd UX Style Guide
     <h1>Helper Classes</h1>
     <div class="subsection">
       <h3>Quick Floats</h3>
-      <p>Float an element to the left or right with a class.</p>
+      <p>Float an element to the left or right with a class. Can also be used as a mixin.</p>
       <pre><code class="language-ruby">## As a class
 &lt;div class="pull-left"&gt;…&lt;/div&gt;
 &lt;div class="pull-right"&gt;…&lt;/div&gt;
@@ -563,12 +563,20 @@ title: Untappd UX Style Guide
 @mixin pull-right</code></pre>
 
       <h3>Clearfix</h3>
-      <p>Easily clear <code>float</code>s by adding <code>.clearfix</code> to the parent element. Can also be used as a mixin.</p>
+      <p>Easily clear floats by adding <code>.clearfix</code> to the parent element. Can also be used as a mixin.</p>
       <pre><code class="language-ruby">## As a class
 &lt;div class="clearfix"&gt;…&lt;/div&gt;
 
 ## As a mixin
 @mixin clearfix</code></pre>
+
+      <h3>Center Text</h3>
+      <p>Easily center text by adding <code>.text-center</code> to the text element. Can also be used as a mixin.</p>
+      <pre><code class="language-ruby">## As a class
+&lt;div class="text-center"&gt;…&lt;/div&gt;
+
+## As a mixin
+@mixin text-center</code></pre>
     </div>
   </section>
 </div>
