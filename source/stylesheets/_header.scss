@@ -1,0 +1,20 @@
+.top-bar {
+  background: $brand;
+  padding: 0;
+  .logo {
+    margin: 10px 20px;
+    width: 150px;
+  }
+  ul {
+    background: transparent;
+  }
+
+  .menu a {
+    color: white;
+    margin: 0;
+    padding: 20px 15px;
+    &:hover {
+      background: $brand-dark;
+    }
+  }
+}

@@ -15,22 +15,34 @@
     <%= stylesheet_link_tag :application %>
     <style>
       <%= Rouge::Themes::Github.render(scope: '.highlight') %>
+      .grid-docs .row {
+        background: #f9f9f9;
+        border: 1px solid #c6c6c6;
+        line-height: 2rem;
+        font-size: 11px;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .grid-docs .columns:nth-child(even) {
+        background: #ddd;
+      }
+
+      .grid-docs .columns:nth-child(odd) {
+        background: #eee;
+      }
     </style>
     <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
     <%= javascript_include_tag :all %>
-
-
   </head>
 
   <body>
-    <div class="expanded row">
-      <div class="large-12">
-        <%= partial '_header' %>
-      </div>
-    </div>
+
+    <%= partial '_header' %>
     <div class="row">
       <div class="large-3 columns">
         <%= partial '_sidebar' %>
