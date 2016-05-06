@@ -10,6 +10,9 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+
+activate :syntax, line_numbers: true
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
