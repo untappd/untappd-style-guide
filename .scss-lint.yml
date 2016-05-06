@@ -1,0 +1,8 @@
+scss_files: 'source/stylesheets/**/*.scss'
+
+exclude: 'source/stylesheets/foundation/**'
+
+linters:
+  Indentation:
+    severity: error
+    width: 2
