@@ -1,0 +1,15 @@
+<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+<%= stylesheet_link_tag :application %>
+
+<style>
+  <%= Rouge::Themes::Github.render(scope: '.highlight') %>
+  code, kbd, pre, samp {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.1em;
+  }
+</style>
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+<%= javascript_include_tag :all %>
