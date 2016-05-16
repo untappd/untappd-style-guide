@@ -1,3 +1,4 @@
-@import 'settings';
-@import 'foundation/foundation';
-@include foundation-everything($flex: true);
+@import "settings";
+@import "foundation/foundation";
+@include foundation-everything;
+@import "header";

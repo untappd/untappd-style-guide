@@ -55,6 +55,11 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
+
+// UT Colors
+$brand: #ffcf0d;
+$brand-dark: darken($brand, 4%);
+
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -62,7 +67,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: "proxima-nova", Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: "proxima-nova", Helvetica, Arial, sans-serif;
 $body-antialiased: false;
 $global-margin: 1rem;
 $global-padding: 1rem;
