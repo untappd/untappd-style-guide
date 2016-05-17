@@ -7,8 +7,43 @@
 
     <title>Untappd Style Guide</title>
 
-    <%= partial 'layouts/_typekit' %>
-    <%= partial 'layouts/_head' %>
+    <script src="//use.typekit.net/mgy7cuo.js"></script>
+    <script>
+     try{Typekit.load();}catch(e){}
+    </script>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag :application %>
+
+    <style>
+      <%= Rouge::Themes::Github.render(scope: '.highlight') %>
+      .grid-docs .row {
+        background: #f9f9f9;
+        border: 1px solid #c6c6c6;
+        line-height: 2rem;
+        font-size: 11px;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .grid-docs .columns:nth-child(even) {
+        background: #ddd;
+      }
+
+      .grid-docs .columns:nth-child(odd) {
+        background: #eee;
+      }
+
+      code, kbd, pre, samp {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.1em;
+      }
+    </style>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+    <%= javascript_include_tag :all %>
   </head>
 
   <body>
