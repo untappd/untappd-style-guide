@@ -17,7 +17,7 @@
 
     <style>
       <%= Rouge::Themes::Github.render(scope: '.highlight') %>
-      .grid-docs .row {
+      #grid-docs .row {
         background: #f9f9f9;
         border: 1px solid #c6c6c6;
         line-height: 2rem;
@@ -27,11 +27,11 @@
         margin-right: 0;
       }
 
-      .grid-docs .columns:nth-child(even) {
+    #grid-docs .columns:nth-child(even) {
         background: #ddd;
       }
 
-      .grid-docs .columns:nth-child(odd) {
+    #grid-docs .columns:nth-child(odd) {
         background: #eee;
       }
 

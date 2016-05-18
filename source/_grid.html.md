@@ -1,35 +1,42 @@
-<section class="grid-docs">
-  <h2>Grid</h2>
-
-  <div class="row">
-    <div class="small-2 large-4 columns">4</div>
-    <div class="small-4 large-4 columns">4</div>
-    <div class="small-6 large-4 columns">4</div>
+<section id="Grid">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h3>Grid</h3>
+    </div>
+    <div class="content">
+      <div id="grid-docs">
+        <div class="row">
+          <div class="small-2 large-4 columns">4</div>
+          <div class="small-4 large-4 columns">4</div>
+          <div class="small-6 large-4 columns">4</div>
+        </div>
+        <div class="row">
+          <div class="large-3 columns">3</div>
+          <div class="large-6 columns">6</div>
+          <div class="large-3 columns">3</div>
+        </div>
+        <div class="row">
+          <div class="small-6 large-2 columns">2</div>
+          <div class="small-6 large-8 columns">8</div>
+          <div class="small-12 large-2 columns">2</div>
+        </div>
+        <div class="row">
+          <div class="small-3 columns">3</div>
+          <div class="small-9 columns">9</div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns">4</div>
+          <div class="large-8 columns">8</div>
+        </div>
+        <div class="row">
+          <div class="small-6 large-5 columns">5</div>
+          <div class="small-6 large-7 columns">7</div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns">6</div>
+          <div class="large-6 columns">6</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <div class="large-3 columns">3</div>
-    <div class="large-6 columns">6</div>
-    <div class="large-3 columns">3</div>
-  </div>
-  <div class="row">
-    <div class="small-6 large-2 columns">2</div>
-    <div class="small-6 large-8 columns">8</div>
-    <div class="small-12 large-2 columns">2</div>
-  </div>
-  <div class="row">
-    <div class="small-3 columns">3</div>
-    <div class="small-9 columns">9</div>
-  </div>
-  <div class="row">
-    <div class="large-4 columns">4</div>
-    <div class="large-8 columns">8</div>
-  </div>
-  <div class="row">
-    <div class="small-6 large-5 columns">5</div>
-    <div class="small-6 large-7 columns">7</div>
-  </div>
-  <div class="row">
-    <div class="large-6 columns">6</div>
-    <div class="large-6 columns">6</div>
-  </div>
-</section>
+<section>
