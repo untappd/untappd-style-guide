@@ -4,6 +4,6 @@ $(function () {
   $('.highlight').hide()
   $('.toggle-code').click(function (e) {
     e.preventDefault()
-    $(this).closest('p').next('.highlight').toggle()
+    $(this).next('.highlight').toggle()
   })
 })
