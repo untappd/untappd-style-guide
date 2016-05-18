@@ -60,7 +60,7 @@ $foundation-palette: (
 $brand: #ffcf0d;
 $brand-dark: darken($brand, 4%);
 $secondary: #d56601;
-$secondar-light: #ff9933;
+$secondary-light: #ff9933;
 $beige: #fbf9f3;
 
 $lightest-gray: #f8f8f8;
@@ -69,7 +69,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #212121;
 $white: #ffffff;
-$body-background: $white;
+$body-background: $beige;
 $body-font-color: $black;
 $body-font-family: "proxima-nova", Helvetica, Arial, sans-serif;
 $body-antialiased: false;

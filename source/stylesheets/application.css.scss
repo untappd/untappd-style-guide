@@ -3,4 +3,45 @@
 @include foundation-everything;
 @import "header";
 @import "typography";
-@import "components";
+@import "cards";
+
+#sidebar {
+  margin-top: 30px;
+  ul {
+    margin: 0;
+  }
+}
+
+#primary-content {
+  margin: 30px 0;
+}
+
+.section {
+  margin: 30px 0;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Links
+a {
+  color: $secondary;
+  text-decoration: $secondary;
+  line-height: inherit;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $secondary;
+    @if $anchor-text-decoration-hover != $anchor-text-decoration {
+      text-decoration: $anchor-text-decoration-hover;
+    }
+  }
+
+  img {
+    border: 0;
+  }
+}

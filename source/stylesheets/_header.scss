@@ -9,12 +9,15 @@
     background: transparent;
   }
 
-  .menu a {
-    color: white;
-    margin: 0;
-    padding: 20px 15px;
-    &:hover {
-      background: $brand-dark;
+  .menu {
+    padding: 0 20px;
+    a {
+      color: white;
+      margin: 0;
+      padding: 20px 15px;
+      &:hover {
+        background: $brand-dark;
+      }
     }
   }
 }
