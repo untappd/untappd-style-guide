@@ -51,7 +51,7 @@ $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #2199e8,
   secondary: #777,
-  success: #3adb76,
+  success: #49B370,
   warning: #ffae00,
   alert: #ec5840,
 );
@@ -60,7 +60,8 @@ $foundation-palette: (
 $brand: #ffcf0d;
 $brand-dark: darken($brand, 4%);
 $secondary: #d56601;
-$secondary-light: #ff9933;
+$secondary-hover: #ff9933;
+$turtiary: #0073AD;
 $beige: #fbf9f3;
 
 $lightest-gray: #f8f8f8;
@@ -245,7 +246,7 @@ $breadcrumbs-item-slash: true;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: $brand;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;

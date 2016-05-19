@@ -11,12 +11,10 @@
   color: $black;
   margin-bottom: 10px;
   border: 1px solid $light-gray;
-  border-radius: 1px;
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  @include border-radius;
   &:last-child {
     margin-bottom: 0;
   }
@@ -24,7 +22,9 @@
   .header {
     background: $lightest-gray;
     border-bottom: 1px solid lighten($light-gray, 3%);
-    border-radius: 1px;
+    border-radius: $radius $radius 0 0;
+      -moz-border-radius: $radius $radius 0 0;
+      -webkit-border-radius: $radius $radius 0 0;
     padding: 10px 10px 10px 20px;
 
     h3 {

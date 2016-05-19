@@ -1,9 +1,12 @@
 @import "settings";
 @import "foundation/foundation";
 @include foundation-everything;
+@import "variables";
+@import "mixins";
 @import "header";
 @import "typography";
 @import "cards";
+@import "buttons";
 
 #sidebar {
   margin-top: 30px;
@@ -35,7 +38,7 @@ a {
 
   &:hover,
   &:focus {
-    color: $secondary;
+    color: $secondary-hover;
     @if $anchor-text-decoration-hover != $anchor-text-decoration {
       text-decoration: $anchor-text-decoration-hover;
     }
