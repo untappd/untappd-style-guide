@@ -4,3 +4,14 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin card {
+  background: $white;
+  color: $black;
+  margin-bottom: 10px;
+  border: 1px solid $light-gray;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  @include border-radius;
+}
