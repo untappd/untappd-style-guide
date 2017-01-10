@@ -1,23 +1,14 @@
-.toggle-code {
-  display: block;
+ .toggle-code {
+  display: inline-block;
+  background: $lightest-gray;
+  border: 1px solid $light-gray;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  @include border-radius;
 }
 
 .button {
   @include border-radius;
-}
-
-.button-secondary {
-  background: transparent;
-  border: 1px solid $turtiary;
-  color: $turtiary;
-  &:hover, &:focus {
-    background: $turtiary;
-    color: white;
-  }
-  &:active {
-    background: $turtiary;
-    border: 1px solid $turtiary;
-  }
 }
 
 .button-group {

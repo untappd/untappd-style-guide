@@ -1,3 +1,37 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: .15px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  color: $dark-gray;
+}
+
 .content p {
 
   &:last-child {

@@ -32,14 +32,11 @@
 
 // Links
 a {
-  color: $secondary;
-  text-decoration: $secondary;
   line-height: inherit;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: $secondary-hover;
     @if $anchor-text-decoration-hover != $anchor-text-decoration {
       text-decoration: $anchor-text-decoration-hover;
     }

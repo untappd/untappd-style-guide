@@ -21,7 +21,7 @@ helpers do
     html = Middleman::Syntax::Highlighter.highlight(content, 'html')
 
     concat_content content
-    concat_content "<a href='#' class='toggle-code'>Toggle Code</a>\n"
+    concat_content "<a href='#' class='toggle-code'>Toggle code</a>\n"
     concat_content html
   end
 end
