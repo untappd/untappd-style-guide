@@ -9,6 +9,41 @@
 
 .button {
   @include border-radius;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: .6px;
+  padding: 0.6em 1em;
+  position: relative;
+  &:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .2);
+    top: -2px;
+  }
+  &:active {
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 5, 5, .25);
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 5, 5, .25);
+    -moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 5, 5, .25);
+  }
+}
+
+.button.default {
+  &:hover {
+    background-color: $brand-dark;
+  }
+}
+
+.button-secondary {
+  background: $blue;
+  &:hover {
+    background: $dark-blue;
+  }
+}
+
+.success {
+  &:hover {
+    background: $dark-green;
+  }
 }
 
 .button-group {
