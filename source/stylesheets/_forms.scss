@@ -1,0 +1,53 @@
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  @include border-radius;
+  box-shadow: none;
+  margin: 0;
+}
+
+select {
+  @include border-radius;
+}
+
+.form-group {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.help-text {
+  color: $dark-gray;
+  font-style: normal;
+  margin-top: 4px;
+}
+
+fieldset {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-actions {
+  vertical-align: middle;
+
+  .button {
+    margin: 0 .5em 0 0;
+  }
+}

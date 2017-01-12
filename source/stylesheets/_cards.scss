@@ -16,8 +16,6 @@
     background: $lightest-gray;
     border-bottom: 1px solid lighten($light-gray, 3%);
     border-radius: $radius $radius 0 0;
-      -moz-border-radius: $radius $radius 0 0;
-      -webkit-border-radius: $radius $radius 0 0;
     padding: 15px 30px;
 
     h1 {
@@ -30,9 +28,12 @@
   }
 
   .footer {
-    border-top: 1px solid $lightest-gray;
-    margin: 0 30px;
-    padding: 10px 0;
-    text-align: center;
+    border-top: 1px solid $light-gray;
+    padding: 20px 30px;
+
+    button,
+    .button {
+      margin: 0 5px 0 0;
+    }
   }
 }
