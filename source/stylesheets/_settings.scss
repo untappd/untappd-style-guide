@@ -60,6 +60,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #212121;
 $white: #fff;
+$selection-color: #fff5d6;
 $body-background: $beige;
 $body-font-color: $black;
 $body-font-family: "proxima-nova", Helvetica, Arial, sans-serif;
@@ -87,6 +88,12 @@ $foundation-palette: (
 );
 
 @include add-foundation-colors;
+
+// Text selection
+
+::selection {
+  background: $selection-color;
+}
 
 // 2. Breakpoints
 // --------------

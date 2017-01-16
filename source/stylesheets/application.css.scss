@@ -11,14 +11,14 @@
 @import "forms";
 
 #sidebar {
-  margin-top: 30px;
+  margin-top: $spacing-lg;
   ul {
     margin: 0;
   }
 }
 
 #primary-content {
-  margin: 30px 0;
+  margin: $spacing-lg 0;
 }
 
 .section {
