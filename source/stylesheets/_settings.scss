@@ -45,16 +45,6 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
-$global-width: rem-calc(1200);
-$global-lineheight: 1.5;
-$foundation-palette: (
-  primary: #d76600,
-  secondary: #1e91ea,
-  success: #6dbc4a,
-  warning: #ffae00,
-  alert: #ea4f4f,
-);
 
 // UT Color
 $brand: #ffb800;
@@ -64,7 +54,6 @@ $dark-green: #61a642;
 $blue: #1e91ea;
 $dark-blue: #1877c1;
 $beige: #f5efe6;
-
 $lightest-gray: #f8f8f8;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -83,6 +72,19 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
+
+// Foundation Palette
+
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
+$foundation-palette: (
+  primary: $blue,
+  secondary: $lightest-gray,
+  success: #6dbc4a,
+  warning: #ffae00,
+  alert: #ea4f4f,
+);
 
 @include add-foundation-colors;
 

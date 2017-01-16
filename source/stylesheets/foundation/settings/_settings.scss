@@ -49,11 +49,11 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #d76600,
-  secondary: #1e91ea,
-  success: #6dbc4a,
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
   warning: #ffae00,
-  alert: #ea4f4f,
+  alert: #cc4b37,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -126,7 +126,7 @@ $header-sizes: (
 );
 $header-color: inherit;
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-margin-bottom: .5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;

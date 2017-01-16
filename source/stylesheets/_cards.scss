@@ -25,11 +25,11 @@
   }
 
   .menu {
-    border-radius: 3px;
     margin-top: 2px;
 
     a {
-      color: $blue;
+      border-radius: $border-radius;
+      color: $dark-gray;
 
       &:hover {
         background: darken($lightest-gray, 3%);

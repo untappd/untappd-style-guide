@@ -22,14 +22,41 @@
 
 .button {
   @include border-radius;
-  background: $lightest-gray;
-  border: 1px solid $light-gray;
-  color: $blue;
   font-size: 1em;
   padding: .6em 1em;
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow-hover;
+    top: -1px;
+  }
+
+  &:active {
+    box-shadow: $box-shadow-active;
+  }
+}
+
+.primary {
+  background: $blue;
+  border: 1px solid transparent;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue;
+    color: #fff;
+    border: 1px solid transparent;
+  }
+}
+
+.button.secondary {
+  background: $lightest-gray;
+  border: 1px solid $light-gray;
+  color: $blue;
+
+  &:hover,
+  &:focus {
     background: $lightest-gray;
     border: 1px solid $medium-gray;
     box-shadow: $box-shadow-hover;
@@ -42,29 +69,27 @@
   }
 }
 
-.default,
-.success {
+.primary,
+.success,
+.alert {
   font-weight: 600;
 }
 
-.default {
-  background: $blue;
+.success {
   border: 1px solid transparent;
-  color: #fff;
 
-  &:hover {
-    background-color: $dark-blue;
-    color: #fff;
+  &:hover,
+  &:focus {
+    background: $dark-green;
     border: 1px solid transparent;
   }
 }
 
-.success {
-  border: 1px solid transparent;
+.button.alert {
+  color: #fff;
 
   &:hover {
-    background: $dark-green;
-    border: 1px solid transparent;
+    color: white;
   }
 }
 
@@ -80,4 +105,9 @@
       border-radius: 0 $radius $radius 0;
     }
   }
+}
+
+.icon {
+  margin: -2px 7px 0 0;
+  vertical-align: middle;
 }
