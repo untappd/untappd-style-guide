@@ -16,20 +16,38 @@
     background: $lightest-gray;
     border-bottom: 1px solid lighten($light-gray, 3%);
     border-radius: $radius $radius 0 0;
-    padding: 15px 30px;
+    padding: 15px 20px;
 
     h1 {
+      display: inline-block;
       margin-bottom: 0;
     }
   }
 
+  .menu {
+    border-radius: 3px;
+    margin-top: 2px;
+
+    a {
+      color: $blue;
+
+      &:hover {
+        background: darken($lightest-gray, 3%);
+      }
+
+      &:active {
+        box-shadow: $box-shadow-active;
+      }
+    }
+  }
+
   .content {
-    padding: 30px;
+    padding: 20px;
   }
 
   .footer {
     border-top: 1px solid $light-gray;
-    padding: 20px 30px;
+    padding: 20px;
 
     button,
     .button {

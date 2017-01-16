@@ -1,0 +1,61 @@
+.item {
+  @include card;
+  box-shadow: none;
+  margin-bottom: 5px;
+  padding: 10px;
+  position: relative;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    top: -1px;
+  }
+
+  .tap-number {
+    margin-right: 10px;
+    width: 7%;
+
+    input {
+      height: 40px;
+    }
+  }
+
+  .item-info {
+
+    .thumbnail {
+      border: 0;
+      box-shadow: none;
+      height: 40px;
+      margin: 0 10px 0 0;
+      padding: 0;
+      width: 40px;
+    }
+
+    h5 {
+      line-height: .9;
+      margin: 0;
+    }
+
+    .brewery,
+    span {
+      color: $dark-gray;
+      font-size: 1rem;
+    }
+  }
+
+  .item-actions {
+    padding-top: 8px;
+    vertical-align: middle;
+
+    a {
+      padding: 0 5px;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    img {
+      height: 24px;
+    }
+  }
+}
