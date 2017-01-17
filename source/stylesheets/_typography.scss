@@ -1,4 +1,5 @@
 body {
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -34,12 +35,12 @@ h6 {
 }
 
 .description {
-  color: dark-gray;
+  color: $dark-gray;
   margin: 0;
 }
 
 p {
-  color: $dark-gray;
+  color: $black;
 }
 
 .content p {
