@@ -12,15 +12,60 @@
   <div class="item-info float-left">
     <img class="thumbnail float-left" src="https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png">
     <div class="float-left">
-      <h5>Jai Alai IPA</h5>
+      <h5>Jai Alai IPA <a data-open="exampleModal1" class="untappd-info">i</a></h5>
       <span class="brewery">Cigar City Brewing</span><span class="sytle"> • IPA - American</span><span class="abv"> • 7.5% ABV</span>
     </div>
   </div>
+
   <div class="item-actions float-right">
     <a href="#"><img src="/images/change-custom-section-icon.svg"></a>
     <a href="#"><img src="/images/share-icon.svg"></a>
     <a href="#"><img src="/images/trash-can-med-gray.svg"></a>
     <a href="#"><img src="/images/move.svg"></a>
+  </div>
+</div>
+
+<div class="reveal card" id="exampleModal1" data-reveal>
+  <div class="header">
+    <h1>Beer Info</h1>
+    <button class="close-button float-right" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span> Close
+    </button>
+  </div>
+  <div class="content">
+    <div class="untappd-detail clearfix">
+      <img class="float-left" src="https://untappd.akamaized.net/site/beer_logos/beer-5724_b378b_sm.jpeg" />
+      <h5>Jai Alai IPA</h5>
+      <span>Cigar City Brewing</span>
+    </div>
+    <hr />
+    <div class="beer-info">
+      <span class="style">IPA - American</span>
+      <span class="pipe">|</span>
+      <span class="abv">7.5 ABV</span>
+      <span class="pipe">|</span>
+      <span class="ibu">70 IBU</span>
+      <span class="pipe">|</span>
+      <span class="rating-label">Untappd Rating</span>
+      <span class="rating small r400"></span>
+    </div>
+    <div class="beer-description">
+      <p>Jai Alai, a game native to the Basque region of Spain, is played on a court called a fronton. Jai Alai players attempt to catch a ball using a curved mitt whilst the ball travels at speeds up to 188mph! Proving they have a sense of humor the Spanish dubbed this game, with its ball traveling at racecar speeds, “the merry game.” Tampa was once home to a bustling Jai Alai fronton but sadly all that remains of Jai Alai in the Tampa Bay area is this India Pale Ale that we brew in tribute to the merry game. The India Pale Ale style of beer has its roots in the ales sent from England to thirsty British troops in India during the 18th century. Pair Jai Alai India Pale Ale with beef empanadas, deviled crabs and other spicy dishes.</p>
+    </div>
+
+    <h3 class="no-margin">Shelf Display Card</h3>
+    <p class="description">Download a display card with beer detail and Untappd rating</p>
+    <form data-abide novalidate>
+      <fieldset>
+        <legend>Choose a size:</legend>
+        <input type="radio" name="size" value="3x3.5" id="3x3.5"><label for="3x3.5">3 x 3.5in</label><br />
+        <input type="radio" name="size" value="2.5x5" id="2.5x5" required><label for="2.5x5">2.5 x 5 in</label><br />
+        <input type="radio" name="size" value="6x2" id="6x2"><label for="6x2">6 x 2 in</label>
+      </fieldset>
+      <div class="form-actions">
+        <button type="button" class="button primary">Download PDF</button>
+      </div>
+    </form>
   </div>
 </div>
       <% end %>

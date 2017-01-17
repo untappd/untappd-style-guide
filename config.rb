@@ -18,7 +18,7 @@ require 'middleman-syntax'
 helpers do
   def example(&block)
     content = capture_html(&block)
-    html = Middleman::Syntax::Highlighter.highlight(content, 'slim')
+    html = Middleman::Syntax::Highlighter.highlight(content, 'html')
 
     concat_content content
     concat_content "<a href='#' class='toggle-code'>Toggle code</a>\n"

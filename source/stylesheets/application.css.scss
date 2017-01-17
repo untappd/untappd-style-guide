@@ -10,6 +10,9 @@
 @import "item";
 @import "forms";
 @import "tables";
+@import "modal";
+
+@import "helpers";
 
 #sidebar {
   margin-top: $spacing-lg;
@@ -30,6 +33,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.pipe {
+  color: $medium-gray;
+  padding: 0 3px;
 }
 
 // Links
