@@ -1,21 +1,22 @@
-@import "settings";
-@import "foundation/foundation";
+@import 'settings';
+@import 'foundation/foundation';
 @include foundation-everything;
-@import "variables";
-@import "mixins";
-@import "header";
-@import "typography";
-@import "cards";
-@import "buttons";
-@import "item";
-@import "forms";
-@import "tables";
-@import "modal";
-
-@import "helpers";
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'typography';
+@import 'cards';
+@import 'buttons';
+@import 'item';
+@import 'forms';
+@import 'tables';
+@import 'modal';
+@import 'sidebar';
+@import 'helpers';
 
 #sidebar {
   margin-top: $spacing-lg;
+
   ul {
     margin: 0;
   }
@@ -27,9 +28,11 @@
 
 .section {
   margin: 30px 0;
+
   &:first-child {
     margin-top: 0;
   }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -42,8 +45,8 @@
 
 // Links
 a {
-  line-height: inherit;
   cursor: pointer;
+  line-height: inherit;
 
   &:hover,
   &:focus {
