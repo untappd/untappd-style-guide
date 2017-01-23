@@ -1,40 +1,10 @@
-// Font Sizes
-$base-font-size: 1em;
-$font-size-base: $base-font-size;
-$font-size-small: modular-scale(-1);
-$font-size-smaller: modular-scale(-2);
-$font-size-smallest: modular-scale(-3);
-$font-size-large: modular-scale(1);
-$font-size-larger: modular-scale(2);
-$font-size-largest: modular-scale(3);
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 30px;
 
-$font-family-sans-serif: "proxima-nova", Arial, sans-serif !default;
-$font-family-serif: "proxima-nova", "Times New Roman", Times, serif !default;
-$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base: $font-family-sans-serif !default;
-$base-font-family: $font-family-base;
-$heading-font-family: $font-family-base;
+$box-shadow-hover: 0 2px 6px 0 rgba(0, 0, 0, .05);
+$box-shadow-active: inset 0 1px 1px 0 rgba(0, 5, 5, .25);
 
-// Colors
+$border-radius: 3px;
 
-$blue: #0073AD;
-$dark-blue: #006497;
-$darkest-gray: #282828;
-$dark-gray: lighten($darkest-gray, 10%);
-$darker-gray: lighten($darkest-gray, 25%);
-$medium-gray: lighten($darkest-gray, 50%);
-$light-gray: lighten($darkest-gray, 75%);
-$lightest-gray: lighten($darkest-gray, 80%);
-$untappd-yellow: #FFCF0D;
-$untappd-yellow-dark: #F5B902;
-$light-beige: #FBF9F3;
-$dark-beige: #F5F1E8;
-$link-color: #D56601;
-$error-color: #F3545A;
-$success-color: #48B370;
-
-// Miscelaneous
-
-$border-radius-medium: 5px;
-$border-radius-medium: 3px;
-$border-radius-small: 1px;
+$transition: all .2s ease;

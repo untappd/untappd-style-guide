@@ -1,5 +1,9 @@
-.sidebar {
-  a {
-    border: 0;
+#sidebar {
+  section {
+    margin: $spacing-md 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }

@@ -1,58 +1,51 @@
 body {
-  font-size: 15px;
-  font-family: $font-family-base;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h4, h5, h6 {
-  color: $darkest-gray;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
-  margin: 15px 0;
-
-  // For style guide only
-  span {
-    color: $darker-gray;
-    font-size: 12px;
-    font-style: normal;
-    text-transform: none;
-  }
+  letter-spacing: .15px;
 }
 
 h1 {
-  border-bottom: 1px solid $light-gray;
-  font-size: 30px;
-  line-height: 48px;
-  padding-bottom: 10px;
+  font-size: 1.8em;
 }
 
 h2 {
-  font-size: 25px;
-  line-height: 36px;
+  font-size: 1.7em;
 }
 
 h3 {
-  font-size: 21px;
-  font-style: italic;
-  line-height: 24px;
+  font-size: 1.4em;
 }
 
 h4 {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
   text-transform: uppercase;
 }
 
-h5 {
-  font-size: 15px;
-  line-height: 24px;
+.description {
+  color: $dark-gray;
+  margin: 0;
 }
 
 p {
-  color: $medium-gray;
-  font-size: 15px;
-  line-height: 24px;
+  color: $black;
 }
 
-.small-text {
-  font-size: 12px;
-  line-height: 18px;
+.content p {
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -1,109 +1,29 @@
-.navigation {
-  background-color: $untappd-yellow;
-  width: 100%;
-
-  .navigation-wrapper {
-    @include clearfix;
-    @include outer-container;
-  }
+.top-bar {
+  background: $brand;
+  padding: 0;
 
   .logo {
-    display: inline-block;
-    margin-top: 12px;
-    img {
-      width: 150px;
-    }
+    margin: 10px 20px;
+    width: 150px;
   }
 
-  .user-image {
-    margin-right: 5px;
-    vertical-align: middle;
+  ul {
+    background: transparent;
   }
 
-  .user {
-    color: white;
-  }
-}
+  .menu {
+    padding: 0 20px;
 
-.dropdown {
-  $large-screen: em(640) !default;
-  $dropdown-distance-from-menu: 50px;
-
-  .dropdown-container {
-    position: relative;
-    text-align: center;
-  }
-
-  .dropdown-description {
-    float: left;
-    padding-right: 1em;
-  }
-
-  .dropdown-button {
-    cursor: pointer;
-    float: right;
-    position: relative;
-    margin: 0;
-    padding: 15px;
-    &:hover {
-      background-color: $untappd-yellow-dark;
-    }
-  }
-
-  .dropdown-button:after {
-    display: block;
-    position: absolute;
-  }
-
-  .dropdown-menu {
-    background: $darkest-gray;
-    border-radius: $border-radius-medium;
-    cursor: pointer;
-    display: none;
-    overflow: show;
-    padding: 0;
-    position: absolute;
-    text-align: center;
-    top: 48px;
-    width: 158px;
-    z-index: 99999;
-    &:before {
-      border-radius: 2px;
-      content: ' ';
-      background: $darkest-gray;
-      height: 10px;
-      position: absolute;
-      top: -4px;
-      width: 10px;
-      margin: 0 auto;
-      -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-      transform: rotate(45deg);
-    }
-    li {
-      border-bottom: 1px solid $dark-gray;
-      list-style: none;
-      margin: 0;
-      &:last-child {
-        border: 0;
-      }
-    }
     a {
-      color: white;
-      display: block;
-      border: 0;
-      padding: 10px 15px;
+      color: #fff;
+      margin: 0;
+      padding: 20px 15px;
+      font-weight: 600;
+      transition: $transition;
+
       &:hover {
-        background: black;
+        background: $brand-dark;
       }
     }
-    .top-radius {
-      border-radius: $border-radius-medium $border-radius-medium 0 0;
-    }
-    .bottom-radius {
-      border-radius: 0 0 $border-radius-medium $border-radius-medium;
-    }
-  }
-  .show-menu {
-    display: inline-block;
   }
 }
