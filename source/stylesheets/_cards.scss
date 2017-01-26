@@ -24,12 +24,16 @@
     }
   }
 
-  .menu {
-    margin-top: 2px;
+  .tabs {
+    background: transparent;
+    border: 0;
 
-    a {
+    .tabs-title > a {
       border-radius: $border-radius;
       color: $black;
+      font-size: 1em;
+      margin-right: 5px;
+      padding: .75rem 1rem;
 
       &:hover {
         background: darken($lightest-gray, 3%);
@@ -43,6 +47,14 @@
 
   .content {
     padding: $spacing-lg;
+  }
+
+  .tabs-content {
+    border: 0;
+  }
+
+  .tabs-panel {
+    padding: 0;
   }
 
   .footer {

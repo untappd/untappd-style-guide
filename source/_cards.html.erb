@@ -72,16 +72,42 @@
   <div class="header">
     <h2>Card Title</h2>
 
-    <ul class="menu float-right">
-      <li><a href="#">Item One</a></li>
-      <li><a href="#">Item Two</a></li>
-      <li><a href="#">Item Three</a></li>
-      <li><a href="#">Item Four</a></li>
-      <li><a href="#">Item Five</a></li>
+    <ul class="tabs float-right" data-tabs id="example-tabs">
+      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+      <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+      <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+      <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+      <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+      <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
     </ul>
   </div>
   <div class="content">
-    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <h5>One</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+      </div>
+      <div class="tabs-panel" id="panel2">
+        <h5>Two</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+      </div>
+      <div class="tabs-panel" id="panel3">
+        <h5>Three</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+      </div>
+      <div class="tabs-panel" id="panel4">
+        <h5>Four</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+      </div>
+      <div class="tabs-panel" id="panel5">
+        <h5>Five</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+      </div>
+      <div class="tabs-panel" id="panel6">
+        <h5>Six</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+      </div>
+    </div>
   </div>
 </div>
         <% end %>
