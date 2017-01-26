@@ -39,16 +39,16 @@
   }
 }
 
-.primary {
+.button.primary {
   background: $blue;
   border: 1px solid transparent;
   color: #fff;
 
   &:hover,
   &:focus {
-    background-color: $dark-blue;
+    background-color: $blue;
     color: #fff;
-    border: 1px solid transparent;
+    border: 1px solid darken($blue, 12%);
   }
 }
 
@@ -61,7 +61,6 @@
   &:focus {
     background: $lightest-gray;
     border: 1px solid $medium-gray;
-    box-shadow: $box-shadow-hover;
     color: $blue;
     top: -1px;
   }
@@ -77,20 +76,24 @@
   font-weight: 600;
 }
 
-.success {
+.button.success {
   border: 1px solid transparent;
 
   &:hover,
   &:focus {
-    background: $dark-green;
-    border: 1px solid transparent;
+    background: $green;
+    border: 1px solid $dark-green;
   }
 }
 
 .button.alert {
+  border: 1px solid transparent;
   color: #fff;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    background: $alert-color;
+    border: 1px solid darken($alert-color, 20%);
     color: white;
   }
 }
