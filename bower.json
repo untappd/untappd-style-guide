@@ -16,6 +16,9 @@
     "ut/layouts",
     "ut/javascripts",
     "ut/images",
-    "ut/*.html.erb"
+    "ut/*.html.erb",
+    "ut/styleguide",
+    "Gemfile",
+    "Gemfile.lock"
   ]
 }
