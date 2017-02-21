@@ -1,55 +1,58 @@
-form {
-  margin: 10px 0;
+// form {
+//   margin: 10px 0;
+// }
+
+// [type='text'],
+// [type='password'],
+// [type='date'],
+// [type='datetime'],
+// [type='datetime-local'],
+// [type='month'],
+// [type='week'],
+// [type='email'],
+// [type='number'],
+// [type='search'],
+// [type='tel'],
+// [type='time'],
+// [type='url'],
+// [type='color'],
+// textarea {
+//   @include border-radius;
+//   box-shadow: none;
+// }
+
+label {
+  font-weight: 600;
 }
 
-[type='text'],
-[type='password'],
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='month'],
-[type='week'],
-[type='email'],
-[type='number'],
-[type='search'],
-[type='tel'],
-[type='time'],
-[type='url'],
-[type='color'],
-textarea {
-  @include border-radius;
-  box-shadow: none;
-  margin: 0;
-}
+// select {
+//   @include border-radius;
+// }
 
-select {
-  @include border-radius;
-}
+// .form-group {
+//   margin-bottom: 10px;
 
-.form-group {
-  margin-bottom: 10px;
+//   &:last-child {
+//     margin-bottom: 0;
+//   }
+// }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
+// .help-text {
+//   color: $dark-gray;
+//   font-style: normal;
+//   margin-top: 4px;
+// }
 
-.help-text {
-  color: $dark-gray;
-  font-style: normal;
-  margin-top: 4px;
-}
+// fieldset {
+//   border: 1px solid $light-gray;
+//   margin-bottom: 10px;
+//   padding: 5px 20px 10px;
+// }
 
-fieldset {
-  border: 1px solid $light-gray;
-  margin-bottom: 10px;
-  padding: 5px 20px 10px;
-}
+// .form-actions {
+//   vertical-align: middle;
 
-.form-actions {
-  vertical-align: middle;
-
-  .button {
-    margin: 0 .5em 0 0;
-  }
-}
+//   .button {
+//     margin: 0 .5em 0 0;
+//   }
+// }

@@ -1,0 +1,17 @@
+{
+  "name": "untappd-style-guide",
+  "homepage": "https://github.com/nextglass/untappd-style-guide",
+  "authors": [
+    "Untappd"
+  ],
+  "description": "",
+  "main": "source/stylesheets",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
