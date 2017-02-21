@@ -9,6 +9,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :source, 'ut'
+
 set :markdown_engine, :kramdown
 
 activate :syntax, line_numbers: true
