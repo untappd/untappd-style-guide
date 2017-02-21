@@ -5,7 +5,6 @@
     "Untappd"
   ],
   "description": "",
-  "main": "source/stylesheets",
   "private": true,
   "ignore": [
     "**/.*",
