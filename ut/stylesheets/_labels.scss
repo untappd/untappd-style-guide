@@ -4,3 +4,11 @@
   padding: 0.33333rem 0.5rem 0.2rem 0.5rem;
   text-transform: uppercase;
 }
+
+.label.secondary {
+  background: darken($secondary-color, 15%);
+}
+
+.label.warning, .label.secondary {
+  color: $white;
+}
