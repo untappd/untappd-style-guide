@@ -1,3 +1,5 @@
+// OVERRIDE SETTINGS
+
 //  Foundation for Sites Settings
 //  -----------------------------
 //
@@ -45,10 +47,12 @@
 // 1. Global
 // ---------
 
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
 
-// UT Color
 $brand: #ffb800;
-$brand-dark: #f90;
+$brand-dark: #ffa500;
 $green: #6dbc4a;
 $dark-green: #61a642;
 $blue: #1e91ea;
@@ -60,11 +64,10 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #212121;
 $white: #fff;
-$selection-color: #fff5d6;
 $body-background: $beige;
 $body-font-color: $black;
 $body-font-family: "proxima-nova", Helvetica, Arial, sans-serif;
-$body-antialiased: false;
+$body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
@@ -74,26 +77,15 @@ $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
 
-// Foundation Palette
-
-$global-font-size: 100%;
-$global-width: rem-calc(1200);
-$global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $blue,
-  secondary: $lightest-gray,
-  success: #6dbc4a,
+  primary: #D56601,
+  secondary: $medium-gray,
+  success: $green,
   warning: #ffae00,
-  alert: #ea4f4f,
+  alert: #cc4b37,
 );
 
 @include add-foundation-colors;
-
-// Text selection
-
-::selection {
-  background: $selection-color;
-}
 
 // 2. Breakpoints
 // --------------
@@ -159,12 +151,12 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: #d56601;
+$anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $light-gray;
+$hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
@@ -174,7 +166,7 @@ $list-side-margin: 1.25rem;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
-$defnlist-term-margin-bottom: .3rem;
+$defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
@@ -195,8 +187,8 @@ $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
-$subheader-margin-top: .2rem;
-$subheader-margin-bottom: .5rem;
+$subheader-margin-top: 0.2rem;
+$subheader-margin-bottom: 0.5rem;
 $stat-font-size: 2.5rem;
 
 // 6. Abide
@@ -234,9 +226,9 @@ $accordionmenu-arrow-color: $primary-color;
 
 $badge-background: $primary-color;
 $badge-color: foreground($badge-background);
-$badge-padding: .3em;
+$badge-padding: 0.3em;
 $badge-minwidth: 2.1em;
-$badge-font-size: .6rem;
+$badge-font-size: 0.6rem;
 
 // 10. Breadcrumbs
 // ---------------
@@ -246,28 +238,28 @@ $breadcrumbs-item-font-size: rem-calc(11);
 $breadcrumbs-item-color: $primary-color;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: .75rem;
+$breadcrumbs-item-margin: 0.75rem;
 $breadcrumbs-item-uppercase: true;
 $breadcrumbs-item-slash: true;
 
 // 11. Button
 // ----------
 
-$button-padding: .85em 1em;
+$button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $brand;
+$button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-sizes: (
-  tiny: .6rem,
-  small: .75rem,
-  default: .9rem,
+  tiny: 0.6rem,
+  small: 0.75rem,
+  default: 0.9rem,
   large: 1.25rem,
 );
-$button-opacity-disabled: .25;
+$button-opacity-disabled: 0.25;
 
 // 12. Button Group
 // ----------------
@@ -282,7 +274,7 @@ $buttongroup-expand-max: 6;
 
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, .25);
+$callout-border: 1px solid rgba($black, 0.25);
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
@@ -295,7 +287,7 @@ $callout-link-tint: 30%;
 
 $closebutton-position: right top;
 $closebutton-offset-horizontal: 1rem;
-$closebutton-offset-vertical: .5rem;
+$closebutton-offset-vertical: 0.5rem;
 $closebutton-size: 2em;
 $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
@@ -304,7 +296,7 @@ $closebutton-color-hover: $black;
 // 15. Drilldown
 // -------------
 
-$drilldown-transition: transform .15s linear;
+$drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
 $drilldown-background: $white;

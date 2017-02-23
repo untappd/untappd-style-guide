@@ -15,7 +15,7 @@
   .header {
     background: $lightest-gray;
     border-bottom: 1px solid lighten($light-gray, 3%);
-    border-radius: $border-radius $border-radius 0 0;
+    border-radius: $global-radius;
     padding: $spacing-md $spacing-md $spacing-md $spacing-lg;
 
     h2 {

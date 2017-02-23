@@ -47,8 +47,8 @@ a {
 }
 
 .toggle-code {
-  @include border-radius;
   background: $lightest-gray;
+  border-radius: $global-radius;
   color: $blue;
   display: inline-block;
   margin: 8px 0;

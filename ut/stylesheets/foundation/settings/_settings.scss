@@ -55,20 +55,23 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+$brand: #ffb800;
+$brand-dark: #f90;
+$lightest-gray: #f8f8f8;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$body-background: $white;
+$black: #212121;
+$white: #fff;
+$body-background: $beige;
 $body-font-color: $black;
-$body-font-family: "proxima-nova", Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: "proxima-nova", Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 3px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;

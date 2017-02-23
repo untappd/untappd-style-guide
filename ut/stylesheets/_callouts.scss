@@ -1,3 +1,15 @@
-.callout {
-  @include border-radius;
+.callout.success {
+  border-color: $success-color;
+}
+
+.callout.warning {
+  border-color: $warning-color;
+}
+
+.callout.alert {
+  border-color: $alert-color;
+}
+
+.success, .warning, .alert p {
+  font-weight: 500;
 }
