@@ -1,13 +1,13 @@
 .callout.success {
-  border-color: $success-color;
+  border-color: rgba($success-color, .40);
 }
 
 .callout.warning {
-  border-color: $warning-color;
+  border-color: rgba($warning-color, .40);
 }
 
 .callout.alert {
-  border-color: $alert-color;
+  border-color: rgba($alert-color, .40);
 }
 
 .success, .warning, .alert p {
