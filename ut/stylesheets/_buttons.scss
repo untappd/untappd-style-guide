@@ -1,4 +1,7 @@
 .button {
+  background: $blue;
+  border: 1px solid transparent;
+  color: #fff;
   font-size: 1em;
   padding: .6em 1em;
   position: relative;
@@ -6,7 +9,10 @@
 
   &:hover,
   &:focus {
+    background-color: $blue;
+    border: 1px solid darken($blue, 12%);
     box-shadow: $box-shadow-hover;
+    color: #fff;
     top: -1px;
   }
 
