@@ -24,11 +24,11 @@
     }
 
     .label {
-      margin-top: 10px;
+      margin-top: 7px;
     }
 
     .button {
-      margin-top: 3px;
+
     }
   }
 
@@ -41,7 +41,7 @@
       color: $black;
       font-size: 1em;
       margin-right: 5px;
-      padding: .75rem 1rem;
+      padding: .6rem 1rem;
 
       &:hover {
         background: darken($lightest-gray, 3%);
