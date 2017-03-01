@@ -1,41 +1,7 @@
-// form {
-//   margin: 10px 0;
-// }
-
-// [type='text'],
-// [type='password'],
-// [type='date'],
-// [type='datetime'],
-// [type='datetime-local'],
-// [type='month'],
-// [type='week'],
-// [type='email'],
-// [type='number'],
-// [type='search'],
-// [type='tel'],
-// [type='time'],
-// [type='url'],
-// [type='color'],
-// textarea {
-//   @include border-radius;
-//   box-shadow: none;
-// }
-
 label {
   font-weight: 600;
 }
 
-// select {
-//   @include border-radius;
-// }
-
-// .form-group {
-//   margin-bottom: 10px;
-
-//   &:last-child {
-//     margin-bottom: 0;
-//   }
-// }
 
 .help-text {
   color: $dark-gray;
@@ -49,6 +15,8 @@ fieldset {
   padding: 5px 20px 10px;
 }
 
-// .form-actions {
-//   vertical-align: middle;
-// }
+.form-actions {
+  span {
+    margin-left: .5em;
+  }
+}

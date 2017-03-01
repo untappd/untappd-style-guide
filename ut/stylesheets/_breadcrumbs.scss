@@ -1,0 +1,16 @@
+.card {
+  .breadcrumbs {
+    border-bottom: 1px solid $light-gray;
+    margin: 0;
+    padding: .8em 30px;
+
+    li {
+      font-size: 1em;
+      text-transform: none;
+    }
+
+    .disabled {
+      color: $dark-gray;
+    }
+  }
+}

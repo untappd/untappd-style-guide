@@ -1,11 +1,11 @@
 <section id="cards">
   <div class="card" id="primary-content">
     <div class="header">
-      <h2>Cards</h2>
+      <h4>Cards</h4>
     </div>
     <div class="content">
       <div class="section">
-        <h5>Card With Content</h5>
+        <h6>Card With Content</h6>
         <% example do %>
 <div class="card">
   <div class="content">
@@ -16,11 +16,11 @@
       </div>
 
       <div class="section">
-        <h5>Card With Header</h5>
+        <h6>Card With Header</h6>
         <% example do %>
 <div class="card">
   <div class="header">
-    <h2>Card Title</h2>
+    <h4>Card Title</h4>
   </div>
   <div class="content">
     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
@@ -30,11 +30,11 @@
       </div>
 
       <div class="section">
-        <h5>Card With Header and Footer</h5>
+        <h6>Card With Header and Footer</h6>
         <% example do %>
 <div class="card">
   <div class="header">
-    <h2>Card Title</h2>
+    <h4>Card Title</h4>
   </div>
   <div class="content">
     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
@@ -48,11 +48,11 @@
       </div>
 
       <div class="section">
-        <h5>Card Header With Button</h5>
+        <h6>Card Header With Button</h6>
         <% example do %>
 <div class="card">
   <div class="header">
-    <h2>Card Title</h2>
+    <h4>Card Title</h4>
     <div class="float-right">
       <button class="button primary">Do Something</button>
     </div>
@@ -66,11 +66,11 @@
       </div>
 
       <div class="section">
-        <h5>Car Header With Label</h5>
+        <h6>Car Header With Label</h6>
         <% example do %>
 <div class="card">
   <div class="header">
-    <h2>Card Title</h2>
+    <h4>Card Title</h4>
     <div class="float-right">
       <span class="success label">Success Label</span>
     </div>
@@ -84,11 +84,11 @@
       </div>
 
       <div class="section">
-        <h5>Card With Navigation</h5>
+        <h6>Card With Navigation</h6>
         <% example do %>
 <div class="card">
   <div class="header">
-    <h2>Card Title</h2>
+    <h4>Card Title</h4>
 
     <ul class="tabs float-right" data-tabs id="example-tabs">
       <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
@@ -102,33 +102,61 @@
   <div class="content">
     <div class="tabs-content" data-tabs-content="example-tabs">
       <div class="tabs-panel is-active" id="panel1">
-        <h5>One</h5>
+        <h5>Tab One</h5>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
       </div>
       <div class="tabs-panel" id="panel2">
-        <h5>Two</h5>
+        <h5>Tab Two</h5>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
       </div>
       <div class="tabs-panel" id="panel3">
-        <h5>Three</h5>
+        <h5>Tab Three</h5>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
       </div>
       <div class="tabs-panel" id="panel4">
-        <h5>Four</h5>
+        <h5>Tab Four</h5>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
       </div>
       <div class="tabs-panel" id="panel5">
-        <h5>Five</h5>
+        <h5>Tab Five</h5>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
       </div>
       <div class="tabs-panel" id="panel6">
-        <h5>Six</h5>
+        <h5>Tab Six</h5>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
       </div>
     </div>
   </div>
 </div>
         <% end %>
+      </div>
+
+      <div class="section">
+        <h6>Card With Breadcrumbs</h6>
+        <% example do %>
+<div class="card">
+  <div class="header">
+    <h4>Card Title</h4>
+  </div>
+
+  <nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li>
+        <span class="show-for-sr">Current: </span> Cloning
+      </li>
+      <li class="disabled">Gene Splicing</li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h5>Tab Two</h5>
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+  </div>
+</div>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>
