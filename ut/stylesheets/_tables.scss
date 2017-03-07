@@ -4,3 +4,15 @@ tfoot th,
 tfoot td {
   font-weight: 600;
 }
+
+thead {
+  background: white;
+
+  th {
+    padding: 0.75rem 0.625rem;
+  }
+}
+
+tbody tr:nth-child(even) {
+  background: $lightest-gray;
+}
