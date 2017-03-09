@@ -59,9 +59,18 @@
     <form data-abide novalidate>
       <fieldset>
         <legend>Choose a size:</legend>
-        <input type="radio" name="size" value="3x3.5" id="3x3.5"><label for="3x3.5">3 x 3.5in</label><br />
-        <input type="radio" name="size" value="2.5x5" id="2.5x5" required><label for="2.5x5">2.5 x 5 in</label><br />
-        <input type="radio" name="size" value="6x2" id="6x2"><label for="6x2">6 x 2 in</label>
+        <label class="control control-radio">3 x 3.5 in
+          <input type="radio" name="size" value="3x3.5" />
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-radio">2.5 x 5 in
+          <input type="radio" name="size" value="2x5.5" />
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-radio">6 x 2 in
+          <input type="radio" name="size" value="6x2" />
+          <div class="control-indicator"></div>
+        </label>
       </fieldset>
       <div class="form-actions">
         <button type="button" class="button primary">Download PDF</button>

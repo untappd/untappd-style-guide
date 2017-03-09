@@ -1,5 +1,7 @@
 .top-bar {
   background: $brand;
+  box-shadow: 0 1px 5px #d9cbb6;
+  border-bottom: 1px solid $brand-dark;
   padding: 0;
 
   .logo {
