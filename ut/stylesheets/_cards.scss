@@ -38,19 +38,28 @@
     border: 0;
 
     .tabs-title > a {
-      border-radius: $border-radius;
+      border-bottom: 2px solid transparent;
       color: $black;
       font-size: 1em;
       margin-right: 5px;
-      padding: .6rem 1rem;
+      padding: .6rem;
+      position: relative;
 
       &:hover {
-        background: darken($lightest-gray, 3%);
+        background: transparent;
+        border-bottom: 2px solid $medium-gray;
       }
 
       &:active {
-        box-shadow: $box-shadow-active;
+        background: transparent;
+        border-bottom: 2px solid $medium-gray;
+        top: 1px;
       }
+    }
+
+    .is-active a {
+      background: transparent;
+      border-bottom: 2px solid $brand;
     }
   }
 
