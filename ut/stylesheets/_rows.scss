@@ -1,0 +1,132 @@
+.row-cell {
+  align-items: center;
+  border-bottom: 1px solid $light-gray;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 -30px;
+  padding: 20px 20px 20px 30px;
+  position: relative;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    top: -1px;
+
+    .hover-actions {
+      display: block;
+    }
+  }
+
+  &:first-of-type {
+    border-top: 1px solid $light-gray;
+  }
+
+  .row-actions {
+    display: flex;
+    margin-left: auto;
+  }
+
+  a {
+    padding: 0 10px;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .hover-actions {
+    display: none;
+  }
+
+  .row-detail {
+    h5 {
+      line-height: .9;
+      margin: 0;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  // Items
+
+  .tap-number {
+    margin-right: 10px;
+    width: 7%;
+  }
+
+  input {
+    height: 40px;
+    margin-bottom: 0;
+  }
+
+  .thumbnail {
+    border: 0;
+    box-shadow: none;
+    height: 40px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 40px;
+  }
+
+  // Evetns
+
+  .event-date {
+    margin-right: $spacing-md;
+  }
+
+  .date, .month {
+    display: block;
+    line-height: 1em;
+    text-align: center;
+  }
+
+  .date {
+    font-size: 2.25em;
+  }
+
+  .month {
+    color: $dark-gray;
+    text-transform: uppercase;
+  }
+}
+
+// New Item
+
+.new-item {
+  align-items: center;
+  background: $lightest-gray;
+  border: 1px solid $light-gray;
+  border-radius: $border-radius;
+  display: flex;
+  padding: 20px;
+
+  .text-block {
+    margin-right: auto;
+  }
+
+  .line-1, .line-2 {
+    background: $medium-gray;
+    border-radius: $border-radius;
+    height: 18px;
+  }
+
+  .line-1 {
+    margin-bottom: $spacing-sm;
+    width: 200px;
+  }
+
+  .line-2 {
+    width: 125px;
+  }
+
+  .button {
+    margin-left: auto;
+  }
+}
