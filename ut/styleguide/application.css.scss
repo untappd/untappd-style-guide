@@ -47,26 +47,7 @@ a {
 }
 
 .toggle-code {
-  background: $lightest-gray;
-  border-radius: $global-radius;
-  color: $blue;
-  display: inline-block;
-  margin: 10px 0;
-  padding: 5px 8px;
-  transition: $transition;
-
-  &:hover {
-    background: darken($lightest-gray, 2%);
-    color: $blue;
-  }
-
-  &:active {
-    color: $blue;
-  }
-
-  &:focus {
-    color: $blue;
-  }
+  margin: $spacing-md 0;
 }
 
 

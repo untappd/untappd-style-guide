@@ -45,19 +45,19 @@
 
   .row-detail {
     h5 {
-      line-height: .9;
+      line-height: 1.1em;
       margin: 0;
     }
 
-    span {
-      font-size: 1rem;
+    .detail {
+      font-size: 1em;
     }
   }
 
   // Items
 
   .tap-number {
-    margin-right: 10px;
+    margin-right: $spacing-md;
     width: 7%;
   }
 
@@ -70,7 +70,7 @@
     border: 0;
     box-shadow: none;
     height: 40px;
-    margin: 0 10px 0 0;
+    margin: 0 $spacing-sm 0 0;
     padding: 0;
     width: 40px;
   }
