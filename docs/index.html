@@ -1,0 +1,1249 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title>Untappd Style Guide</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+    <link href="/styleguide/application.css" rel="stylesheet" />
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c, .highlight .cd {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kv {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .mf {
+  color: #009999;
+}
+.highlight .mh {
+  color: #009999;
+}
+.highlight .il {
+  color: #009999;
+}
+.highlight .mi {
+  color: #009999;
+}
+.highlight .mo {
+  color: #009999;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #009999;
+}
+.highlight .sb {
+  color: #d14;
+}
+.highlight .sc {
+  color: #d14;
+}
+.highlight .sd {
+  color: #d14;
+}
+.highlight .s2 {
+  color: #d14;
+}
+.highlight .se {
+  color: #d14;
+}
+.highlight .sh {
+  color: #d14;
+}
+.highlight .si {
+  color: #d14;
+}
+.highlight .sx {
+  color: #d14;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d14;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .s {
+  color: #d14;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .nb {
+  color: #0086B3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight {
+  background-color: #f8f8f8;
+}
+      #grid-docs .row {
+        background: #f9f9f9;
+        border: 1px solid #c6c6c6;
+        line-height: 2rem;
+        font-size: 11px;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      #grid-docs .columns:nth-child(even) {
+        background: #ddd;
+      }
+
+      #grid-docs .columns:nth-child(odd) {
+        background: #eee;
+      }
+
+      code, kbd, pre, samp {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.1em;
+      }
+
+      .toggle-code {
+        clear: both;
+      }
+    </style>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+  <div class="row">
+    <div class="top-bar-left">
+      <a href="/"><img class="logo" src="images/untappd-logo.svg" /></a>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="index.html">CSS</a></li>
+        <li><a href="components.html">Components</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="large-3 columns">
+        <div class="card" id="sidebar">
+  <div class="content">
+    <section>
+      <h5>CSS</h5>
+      <ul class="no-bullet">
+        <li><a href="/#grid">Grid</a></li>
+        <li><a href="/#typography">Typography</a></li>
+        <li><a href="/#buttons">Buttons</a></li>
+        <li><a href="/#forms">Forms</a></li>
+        <li><a href="/#callouts">Callouts</a></li>
+        <li><a href="/#tables">Tables</a></li>
+        <li><a href="/#modal">Modals</a></li>
+        <li><a href="/#helpers">Helper Classes</a></li>
+        <li><a href="/#labels">Labels</a></li>
+        <li><a href="/#progress">Spinner & Progress</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h5>Components</h5>
+      <ul class="no-bullet">
+        <li><a href="components.html#cards">Cards</a></li>
+        <li><a href="components.html#rows">Item Rows</a></li>
+        <li><a href="components.html#callouts">Callouts</a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+      </div>
+      <div class="large-9 columns" id="docs">
+        <section id="grid">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Grid</h4>
+    </div>
+    <div class="content">
+<div id="grid-docs">
+  <div class="row">
+    <div class="small-2 large-4 columns">4</div>
+    <div class="small-4 large-4 columns">4</div>
+    <div class="small-6 large-4 columns">4</div>
+  </div>
+  <div class="row">
+    <div class="large-3 columns">3</div>
+    <div class="large-6 columns">6</div>
+    <div class="large-3 columns">3</div>
+  </div>
+  <div class="row">
+    <div class="small-6 large-2 columns">2</div>
+    <div class="small-6 large-8 columns">8</div>
+    <div class="small-12 large-2 columns">2</div>
+  </div>
+  <div class="row">
+    <div class="small-3 columns">3</div>
+    <div class="small-9 columns">9</div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">4</div>
+    <div class="large-8 columns">8</div>
+  </div>
+  <div class="row">
+    <div class="small-6 large-5 columns">5</div>
+    <div class="small-6 large-7 columns">7</div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">6</div>
+    <div class="large-6 columns">6</div>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"grid-docs"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-2 large-4 columns"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-4 large-4 columns"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-6 large-4 columns"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-3 columns"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-6 columns"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-3 columns"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-6 large-2 columns"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-6 large-8 columns"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-12 large-2 columns"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-3 columns"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-9 columns"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-4 columns"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-8 columns"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-6 large-5 columns"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-6 large-7 columns"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-6 columns"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-6 columns"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="buttons">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Buttons</h4>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h6>Standard Buttons</h6>
+<a class="button primary">Primary Button</a><br />
+<a class="button secondary">Secondary Button</a><br />
+<button type="button" class="success button">Save</button><br />
+<button type="button" class="alert button">Delete</button><br />
+<a class="button primary" disabled href="#">Disabled</a><br />
+
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button primary"</span><span class="nt">&gt;</span>Primary Button<span class="nt">&lt;/a&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button secondary"</span><span class="nt">&gt;</span>Secondary Button<span class="nt">&lt;/a&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"success button"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"alert button"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/button&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button primary"</span> <span class="na">disabled</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;&lt;br</span> <span class="nt">/&gt;</span>
+
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+      <div class="section">
+        <h6>Alternate Sizes</h6>
+<a class="large button primary" href="#">So Large</a><br />
+<a class="small button primary" href="#">So Small</a><br />
+<a class="tiny button primary" href="#">So Tiny</a><br />
+<a class="expanded button primary" href="#">Such Expand</a>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"large button primary"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>So Large<span class="nt">&lt;/a&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"small button primary"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>So Small<span class="nt">&lt;/a&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tiny button primary"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>So Tiny<span class="nt">&lt;/a&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"expanded button primary"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Such Expand<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Typography</h4>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h6>Headers</h6>
+<h1>h1. This is a very large header.</h1>
+<h2>h2. This is a large header.</h2>
+<h3>h3. This is a medium header.</h3>
+<h4>h4. This is a moderate header.</h4>
+<h5>h5. This is a small header.</h5>
+<h6>h6. This is a tiny header.</h6>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>h1. This is a very large header.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2. This is a large header.<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3. This is a medium header.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4. This is a moderate header.<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5. This is a small header.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6. This is a tiny header.<span class="nt">&lt;/h6&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Small Header Segments</h6>
+<h3>Foundation for Sites <small>Version 6.0.4</small></h3>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;h3&gt;</span>Foundation for Sites <span class="nt">&lt;small&gt;</span>Version 6.0.4<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Paragraphs</h6>
+<p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap strong around type to <strong>make it bold</strong>. You can also use em to <em>italicize your words</em>.</p>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;p&gt;</span>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap strong around type to <span class="nt">&lt;strong&gt;</span>make it bold<span class="nt">&lt;/strong&gt;</span>. You can also use em to <span class="nt">&lt;em&gt;</span>italicize your words<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Links</h6>
+<p>Links are very standard. <a href="global.html">This is a link.</a></p>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;p&gt;</span>Links are very standard. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"global.html"</span><span class="nt">&gt;</span>This is a link.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Dividers</h6>
+<hr>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;hr&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Ordered List</h6>
+<ul>
+  <li>List item with a much longer description or more content.</li>
+  <li>List item</li>
+  <li>List item
+    <ul>
+      <li>Nested list item</li>
+      <li>Nested list item</li>
+      <li>Nested list item</li>
+    </ul>
+  </li>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ul>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item with a much longer description or more content.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Nested list item<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Nested list item<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Nested list item<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Unordered List</h6>
+<ol>
+  <li>Cheese (essential)</li>
+  <li>Pepperoni</li>
+  <li>Bacon
+    <ol>
+      <li>Normal bacon</li>
+      <li>Canadian bacon</li>
+    </ol>
+  </li>
+  <li>Sausage</li>
+  <li>Onions</li>
+  <li>Mushrooms</li>
+</ol>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Cheese (essential)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Pepperoni<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Bacon
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Normal bacon<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Canadian bacon<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Sausage<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Onions<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Mushrooms<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Untstyled List</h6>
+<ol class="no-bullet">
+  <li>Cheese (essential)</li>
+  <li>Pepperoni</li>
+  <li>Bacon</li>
+  <li>Sausage</li>
+  <li>Onions</li>
+  <li>Mushrooms</li>
+</ol>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="code"><pre><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"no-bullet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Cheese (essential)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Pepperoni<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Bacon<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Sausage<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Onions<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Mushrooms<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="forms">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Forms</h4>
+    </div>
+    <div class="content">
+<h5>Form Title</h5>
+<form data-abide novalidate>
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  <div class="row form-group">
+    <div class="small-12 columns">
+      <label>Label
+        <input type="text" placeholder="Placeholder text" aria-describedby="exampleHelpText" required pattern="number">
+        <span class="form-error">Required</span>
+      </label>
+      <p class="help-text" id="exampleHelpText">This helper text.</p>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="small-12 columns">
+      <label>Label
+        <input type="text" placeholder="Placeholder text" aria-describedby="exampleHelpTex" data-abide-ignore>
+      </label>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="medium-6 columns">
+      <label>Label
+        <input type="text" placeholder="Placeholder text" pattern="url">
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>Label
+        <select id="select" required>
+          <option value=""></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="large-6 columns">
+      <fieldset>
+        <legend>Choose one of these:</legend>
+
+        <label class="control control-radio">First radio
+          <input type="radio" name="radio" checked="checked"/>
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-radio">Second radio
+          <input type="radio" name="radio"/>
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-radio">Disabled
+          <input type="radio" name="radio2" disabled="disabled"/>
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-radio">Disabled & checked
+          <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
+          <div class="control-indicator"></div>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose one or more of these:</legend>
+
+        <label class="control control-checkbox">First checkbox
+          <input type="checkbox" checked="checked"/>
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-checkbox">Second checkbox
+          <input type="checkbox"/>
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-checkbox">Disabled
+          <input type="checkbox" disabled="disabled"/>
+          <div class="control-indicator"></div>
+        </label>
+        <label class="control control-checkbox">Disabled & checked
+          <input type="checkbox" disabled="disabled" checked="checked"/>
+          <div class="control-indicator"></div>
+        </label>
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-actions">
+    <button type="button" class="button success">Save form</button> <span>or <a href="">cancel</a></span>
+  </div>
+</form>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</pre></td><td class="code"><pre><span class="nt">&lt;h5&gt;</span>Form Title<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;form</span> <span class="na">data-abide</span> <span class="na">novalidate</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">data-abide-error</span> <span class="na">class=</span><span class="s">"alert callout"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fi-alert"</span><span class="nt">&gt;&lt;/i&gt;</span> There are some errors in your form.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-12 columns"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>Label
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder text"</span> <span class="na">aria-describedby=</span><span class="s">"exampleHelpText"</span> <span class="na">required</span> <span class="na">pattern=</span><span class="s">"number"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error"</span><span class="nt">&gt;</span>Required<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-text"</span> <span class="na">id=</span><span class="s">"exampleHelpText"</span><span class="nt">&gt;</span>This helper text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-12 columns"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>Label
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder text"</span> <span class="na">aria-describedby=</span><span class="s">"exampleHelpTex"</span> <span class="na">data-abide-ignore</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"medium-6 columns"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>Label
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder text"</span> <span class="na">pattern=</span><span class="s">"url"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"medium-6 columns"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>Label
+        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select"</span> <span class="na">required</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"volvo"</span><span class="nt">&gt;</span>Volvo<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"saab"</span><span class="nt">&gt;</span>Saab<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"mercedes"</span><span class="nt">&gt;</span>Mercedes<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"audi"</span><span class="nt">&gt;</span>Audi<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-6 columns"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Choose one of these:<span class="nt">&lt;/legend&gt;</span>
+
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-radio"</span><span class="nt">&gt;</span>First radio
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-radio"</span><span class="nt">&gt;</span>Second radio
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-radio"</span><span class="nt">&gt;</span>Disabled
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio2"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-radio"</span><span class="nt">&gt;</span>Disabled <span class="err">&amp;</span> checked
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio2"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/fieldset&gt;</span>
+
+      <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Choose one or more of these:<span class="nt">&lt;/legend&gt;</span>
+
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-checkbox"</span><span class="nt">&gt;</span>First checkbox
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-checkbox"</span><span class="nt">&gt;</span>Second checkbox
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-checkbox"</span><span class="nt">&gt;</span>Disabled
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-checkbox"</span><span class="nt">&gt;</span>Disabled <span class="err">&amp;</span> checked
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-actions"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"button success"</span><span class="nt">&gt;</span>Save form<span class="nt">&lt;/button&gt;</span> <span class="nt">&lt;span&gt;</span>or <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>cancel<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="tables">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Tables</h4>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h6>Standard Table</h6>
+<table>
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Justo Nullam</td>
+      <td>Bibendum ligula aenean pellentesque</td>
+      <td>Justo Nullam</td>
+      <td>Justo Nullam</td>
+    </tr>
+    <tr>
+      <td>Justo Nullam</td>
+      <td>Bibendum ligula aenean pellentesque</td>
+      <td>Justo Nullam</td>
+      <td>Justo Nullam</td>
+    </tr>
+    <tr>
+      <td>Justo Nullam</td>
+      <td>Bibendum ligula aenean pellentesque</td>
+      <td>Justo Nullam</td>
+      <td>Justo Nullam</td>
+    </tr>
+  </tbody>
+</table>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></td><td class="code"><pre><span class="nt">&lt;table&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">width=</span><span class="s">"200"</span><span class="nt">&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">width=</span><span class="s">"150"</span><span class="nt">&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">width=</span><span class="s">"150"</span><span class="nt">&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Bibendum ligula aenean pellentesque<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Bibendum ligula aenean pellentesque<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Bibendum ligula aenean pellentesque<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Justo Nullam<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modal">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Modal Window</h4>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h6>Basics</h6>
+        <p>A modal is just an empty container, so you can put any kind of content inside it, from text to forms to video to an entire grid.</p>
+<a class="button primary" data-open="exampleModal2">Click for modal example</a><br />
+<div class="reveal card small" id="exampleModal2" data-reveal>
+  <div class="header">
+    <h4>Modal Title</h4>
+    <button class="close-button float-right" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span> Close
+    </button>
+  </div>
+  <div class="content">
+    <h6>Modal Content</h6>
+    <p>Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button primary"</span> <span class="na">data-open=</span><span class="s">"exampleModal2"</span><span class="nt">&gt;</span>Click for modal example<span class="nt">&lt;/a&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"reveal card small"</span> <span class="na">id=</span><span class="s">"exampleModal2"</span> <span class="na">data-reveal</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Modal Title<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close-button float-right"</span> <span class="na">data-close</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span> Close
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h6&gt;</span>Modal Content<span class="nt">&lt;/h6&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+      <div class="section">
+        <h6>Sizing</h6>
+        <p>On small screens, a modal is always 100% of the width of the screen. On medium-sized screens and larger, the width changes to 80%.</p>
+        <p>The size of a modal can be changed with these sizing classes, which are added to the modal container:</p>
+        <ul>
+          <li><code>.tiny</code>: 30% wide</li>
+          <li><code>.small</code>: 50% wide</li>
+          <li><code>.large</code>: 90% wide</li>
+          <li><code>.full</code>: 100% width and height, defaults the <code>escClose</code> option to true, as well as creates a close button.</li>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="callouts">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Tooltip</h4>
+    </div>
+    <div class="content">
+<p>The <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.</p>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;span</span> <span class="na">data-tooltip</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"has-tip"</span> <span class="na">data-disable-hover=</span><span class="s">'false'</span> <span class="na">tabindex=</span><span class="s">1</span> <span class="na">title=</span><span class="s">"Fancy word for a beetle."</span><span class="nt">&gt;</span>scarabaeus<span class="nt">&lt;/span&gt;</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="helpers">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Helper Classes</h4>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h6>Text Alignment</h6>
+        <p>Align elements by adding <code>.left</code>, <code>.right</code>, <code>.center</code> or <code>.justify</code> classes.</p>
+      </div>
+
+      <div class="section">
+        <h6>Floats</h6>
+<div class="callout clearfix">
+  <a class="button primary float-left">Left</a>
+  <a class="button primary float-right">Right</a>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"callout clearfix"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button primary float-left"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button primary float-right"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Other Helpers</h6>
+        <p>Remove margin by adding <code>.no-margin</code>.</p>
+        <p>Remove padding by adding <code>.no-padding</code>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="labels">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Labels</h4>
+    </div>
+    <div class="content">
+<div class="label-container">
+  <span class="label primary">Primary Label</span>
+  <span class="secondary label">Secondary Label</span>
+  <span class="success label">Success Label</span>
+  <span class="alert label">Alert Label</span>
+  <span class="warning label">Warning Label</span>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"label-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label primary"</span><span class="nt">&gt;</span>Primary Label<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"secondary label"</span><span class="nt">&gt;</span>Secondary Label<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"success label"</span><span class="nt">&gt;</span>Success Label<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"alert label"</span><span class="nt">&gt;</span>Alert Label<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"warning label"</span><span class="nt">&gt;</span>Warning Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="progress">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Spinner & Progress Bar</h4>
+    </div>
+    <div class="content">
+<h6>Spinner</h6>
+<div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+
+<h6>Progress Bar</h6>
+<div class="progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+  <div class="progress-meter" style="width: 25%">
+    <p class="progress-meter-text">25%</p>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="nt">&lt;h6&gt;</span>Spinner<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bounce1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bounce2"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bounce3"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h6&gt;</span>Progress Bar<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">aria-valuenow=</span><span class="s">"25"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuetext=</span><span class="s">"25 percent"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-meter"</span> <span class="na">style=</span><span class="s">"width: 25%"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"progress-meter-text"</span><span class="nt">&gt;</span>25%<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+  </div>
+</section>
+
+
+      </div>
+    </div>
+
+    <div id="back-top">
+      <a href="#" class="button primary"><img src="/images/icons/to-top.svg" /></a>
+    </div>
+  </body>
+</html>

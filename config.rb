@@ -10,6 +10,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 set :source, 'ut'
+set :build_dir, 'docs'
 
 set :markdown_engine, :kramdown
 

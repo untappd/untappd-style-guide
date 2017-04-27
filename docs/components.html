@@ -1,0 +1,1038 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title>Untappd Style Guide</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+    <link href="/styleguide/application.css" rel="stylesheet" />
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c, .highlight .cd {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kv {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .mf {
+  color: #009999;
+}
+.highlight .mh {
+  color: #009999;
+}
+.highlight .il {
+  color: #009999;
+}
+.highlight .mi {
+  color: #009999;
+}
+.highlight .mo {
+  color: #009999;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #009999;
+}
+.highlight .sb {
+  color: #d14;
+}
+.highlight .sc {
+  color: #d14;
+}
+.highlight .sd {
+  color: #d14;
+}
+.highlight .s2 {
+  color: #d14;
+}
+.highlight .se {
+  color: #d14;
+}
+.highlight .sh {
+  color: #d14;
+}
+.highlight .si {
+  color: #d14;
+}
+.highlight .sx {
+  color: #d14;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d14;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .s {
+  color: #d14;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .nb {
+  color: #0086B3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight {
+  background-color: #f8f8f8;
+}
+      #grid-docs .row {
+        background: #f9f9f9;
+        border: 1px solid #c6c6c6;
+        line-height: 2rem;
+        font-size: 11px;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      #grid-docs .columns:nth-child(even) {
+        background: #ddd;
+      }
+
+      #grid-docs .columns:nth-child(odd) {
+        background: #eee;
+      }
+
+      code, kbd, pre, samp {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.1em;
+      }
+
+      .toggle-code {
+        clear: both;
+      }
+    </style>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+  <div class="row">
+    <div class="top-bar-left">
+      <a href="/"><img class="logo" src="images/untappd-logo.svg" /></a>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="index.html">CSS</a></li>
+        <li><a href="components.html">Components</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="large-3 columns">
+        <div class="card" id="sidebar">
+  <div class="content">
+    <section>
+      <h5>CSS</h5>
+      <ul class="no-bullet">
+        <li><a href="/#grid">Grid</a></li>
+        <li><a href="/#typography">Typography</a></li>
+        <li><a href="/#buttons">Buttons</a></li>
+        <li><a href="/#forms">Forms</a></li>
+        <li><a href="/#callouts">Callouts</a></li>
+        <li><a href="/#tables">Tables</a></li>
+        <li><a href="/#modal">Modals</a></li>
+        <li><a href="/#helpers">Helper Classes</a></li>
+        <li><a href="/#labels">Labels</a></li>
+        <li><a href="/#progress">Spinner & Progress</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h5>Components</h5>
+      <ul class="no-bullet">
+        <li><a href="components.html#cards">Cards</a></li>
+        <li><a href="components.html#rows">Item Rows</a></li>
+        <li><a href="components.html#callouts">Callouts</a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+      </div>
+      <div class="large-9 columns" id="docs">
+        <section id="cards">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Cards</h4>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h6>Card With Content</h6>
+<div class="card">
+  <div class="content">
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Card With Header</h6>
+<div class="card">
+  <div class="header">
+    <h4>Card Title</h4>
+  </div>
+  <div class="content">
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Card Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Card With Header and Footer</h6>
+<div class="card">
+  <div class="header">
+    <h4>Card Title</h4>
+  </div>
+  <div class="content">
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+  </div>
+  <div class="footer">
+    <button class="button success">Save this thing</button>
+    or <a href="#">cancel</a>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Card Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button success"</span><span class="nt">&gt;</span>Save this thing<span class="nt">&lt;/button&gt;</span>
+    or <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>cancel<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Card Header With Button</h6>
+<div class="card">
+  <div class="header">
+    <h4>Card Title</h4>
+    <div class="float-right">
+      <button class="button primary">Do Something</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Card Title<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button primary"</span><span class="nt">&gt;</span>Do Something<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Car Header With Label</h6>
+<div class="card">
+  <div class="header">
+    <h4>Card Title</h4>
+    <div class="float-right">
+      <span class="success label">Success Label</span>
+    </div>
+  </div>
+
+  <div class="content">
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Card Title<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"success label"</span><span class="nt">&gt;</span>Success Label<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Card With Navigation</h6>
+<div class="card">
+  <div class="header">
+    <h4>Card Title</h4>
+
+    <ul class="tabs float-right" data-tabs id="example-tabs">
+      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+      <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+      <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+      <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+      <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+      <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <h5>Tab One</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+      </div>
+      <div class="tabs-panel" id="panel2">
+        <h5>Tab Two</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+      </div>
+      <div class="tabs-panel" id="panel3">
+        <h5>Tab Three</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+      </div>
+      <div class="tabs-panel" id="panel4">
+        <h5>Tab Four</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+      </div>
+      <div class="tabs-panel" id="panel5">
+        <h5>Tab Five</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+      </div>
+      <div class="tabs-panel" id="panel6">
+        <h5>Tab Six</h5>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Card Title<span class="nt">&lt;/h4&gt;</span>
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"tabs float-right"</span> <span class="na">data-tabs</span> <span class="na">id=</span><span class="s">"example-tabs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tabs-title is-active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#panel1"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tabs-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#panel2"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tabs-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#panel3"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tabs-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#panel4"</span><span class="nt">&gt;</span>Tab 4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tabs-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#panel5"</span><span class="nt">&gt;</span>Tab 5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tabs-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#panel6"</span><span class="nt">&gt;</span>Tab 6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-content"</span> <span class="na">data-tabs-content=</span><span class="s">"example-tabs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-panel is-active"</span> <span class="na">id=</span><span class="s">"panel1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5&gt;</span>Tab One<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-panel"</span> <span class="na">id=</span><span class="s">"panel2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5&gt;</span>Tab Two<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-panel"</span> <span class="na">id=</span><span class="s">"panel3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5&gt;</span>Tab Three<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-panel"</span> <span class="na">id=</span><span class="s">"panel4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5&gt;</span>Tab Four<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-panel"</span> <span class="na">id=</span><span class="s">"panel5"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5&gt;</span>Tab Five<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-panel"</span> <span class="na">id=</span><span class="s">"panel6"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5&gt;</span>Tab Six<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Card With Breadcrumbs</h6>
+<div class="card">
+  <div class="header">
+    <h4>Card Title</h4>
+  </div>
+
+  <nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+      <li><a href="#">Step One</a></li>
+      <li><a href="#">Step Two</a></li>
+      <li>
+        <span class="show-for-sr">Current: </span> Current Step
+      </li>
+      <li class="disabled">Next Step</li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h5>Heading</h5>
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Card Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"You are here:"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"breadcrumbs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Step One<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Step Two<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"show-for-sr"</span><span class="nt">&gt;</span>Current: <span class="nt">&lt;/span&gt;</span> Current Step
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Next Step<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Heading<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rows">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Rows</h4>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h6>New Item</h6>
+<div class="new-item">
+  <div class="text-block">
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+  </div>
+  <a class="button primary">+ Add New Thing</a>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"new-item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"line-1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"line-2"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button primary"</span><span class="nt">&gt;</span>+ Add New Thing<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Menu Section</h6>
+<!-- Section Row -->
+<div class="row-cell">
+  <div class="row-detail">
+    <h5>Section Title <span>(00 Beers)</span></h5>
+  </div>
+
+  <div class="row-actions">
+    <div class="hover-actions">
+      <a href="#"><img src="/images/icons/delete.svg"></a>
+      <a href="#"><img src="/images/icons/move.svg"></a>
+    </div>
+    <a href="#"><img src="/images/icons/disclosure.svg"></a>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="code"><pre><span class="c">&lt;!-- Section Row --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-cell"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-detail"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Section Title <span class="nt">&lt;span&gt;</span>(00 Beers)<span class="nt">&lt;/span&gt;&lt;/h5&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-actions"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hover-actions"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/delete.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/move.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/disclosure.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+      <div class="section">
+        <h6>Menu Item</h6>
+<!-- Item -->
+<div class="row-cell">
+  <div class="tap-number">
+    <input type="text" placeholder="Tap #">
+  </div>
+
+  <img class="thumbnail" src="https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png">
+
+  <div class="row-detail">
+    <h5>Beer Name</h5>
+    <span class="detail">Brewery Name • Beer Style • 5.3% ABV • 80 IBU • 150-300 Cals</span>
+  </div>
+
+  <div class="row-actions">
+    <div class="hover-actions">
+      <a href="#"><img src="/images/icons/delete.svg"></a>
+      <a href="#"><img src="/images/icons/move.svg"></a>
+    </div>
+    <a href="#"><img src="/images/icons/disclosure.svg"></a>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></td><td class="code"><pre><span class="c">&lt;!-- Item --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-cell"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tap-number"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Tap #"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"thumbnail"</span> <span class="na">src=</span><span class="s">"https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-detail"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Beer Name<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"detail"</span><span class="nt">&gt;</span>Brewery Name • Beer Style • 5.3% ABV • 80 IBU • 150-300 Cals<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-actions"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hover-actions"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/delete.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/move.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/disclosure.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+      </div>
+
+    <div class="section">
+      <h6>Event</h6>
+<!-- Event -->
+<div class="row-cell">
+  <div class="event-date">
+    <span class="date">00</span>
+    <span class="month">MAR</span>
+  </div>
+
+  <div class="row-detail">
+    <h5>Event Name</h5>
+    <span class="detail">Event description goes here</span>
+  </div>
+
+  <div class="row-actions">
+    <div class="hover-actions">
+      <a href="#"><img src="/images/icons/edit.svg"></a>
+      <a href="#"><img src="/images/icons/delete.svg"></a>
+    </div>
+    <a href="#"><img src="/images/icons/disclosure.svg"></a>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></td><td class="code"><pre><span class="c">&lt;!-- Event --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-cell"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"event-date"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"date"</span><span class="nt">&gt;</span>00<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"month"</span><span class="nt">&gt;</span>MAR<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-detail"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Event Name<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"detail"</span><span class="nt">&gt;</span>Event description goes here<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-actions"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hover-actions"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/edit.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/delete.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/disclosure.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+
+    <div class="section">
+      <h6>Announcement</h6>
+<!-- Announcement -->
+<div class="row-cell">
+  <div class="row-detail">
+    <h5>Announcement Title</h5>
+    <span class="detail">Announcement text goes here.</span>
+  </div>
+
+  <div class="row-actions">
+    <div class="hover-actions">
+      <a href="#"><img src="/images/icons/edit.svg"></a>
+      <a href="#"><img src="/images/icons/delete.svg"></a>
+    </div>
+    <a href="#"><img src="/images/icons/disclosure.svg"></a>
+  </div>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="code"><pre><span class="c">&lt;!-- Announcement --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-cell"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-detail"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Announcement Title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"detail"</span><span class="nt">&gt;</span>Announcement text goes here.<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-actions"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hover-actions"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/edit.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/delete.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/images/icons/disclosure.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="callouts">
+  <div class="card" id="primary-content">
+    <div class="header">
+      <h4>Callouts</h4>
+    </div>
+    <div class="content">
+<div class="callout">
+  <h5>This is a callout.</h5>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+</div>
+
+<div class="callout success">
+  <h5>This is a success callout</h5>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+</div>
+
+<div class="callout warning">
+  <h5>This is a warning callout</h5>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+</div>
+
+<div class="callout alert">
+  <h5>This is an alert callout</h5>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+</div>
+<a href='#' class='toggle-code button secondary'>Toggle code</a>
+<div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"callout"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>This is a callout.<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;p&gt;</span>It has an easy to override visual style, and is appropriately subdued.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"callout success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>This is a success callout<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;p&gt;</span>It has an easy to override visual style, and is appropriately subdued.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"callout warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>This is a warning callout<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;p&gt;</span>It has an easy to override visual style, and is appropriately subdued.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"callout alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>This is an alert callout<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;p&gt;</span>It has an easy to override visual style, and is appropriately subdued.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+    </div>
+  </div>
+</section>
+
+
+      </div>
+    </div>
+
+    <div id="back-top">
+      <a href="#" class="button primary"><img src="/images/icons/to-top.svg" /></a>
+    </div>
+  </body>
+</html>
