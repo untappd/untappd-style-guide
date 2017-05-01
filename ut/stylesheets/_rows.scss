@@ -105,11 +105,7 @@
   border: 1px solid $light-gray;
   border-radius: $border-radius;
   display: flex;
-  padding: $spacing-md;
-
-  // .text-block {
-  //   margin-right: auto;
-  // }
+  padding: $spacing-md $spacing-lg;
 
   .line-1, .line-2 {
     background: $medium-gray;
@@ -118,7 +114,7 @@
   }
 
   .line-1 {
-    margin-bottom: $spacing-sm;
+    margin-bottom: 6px;
     width: 200px;
   }
 
