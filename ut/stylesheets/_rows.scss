@@ -105,16 +105,16 @@
   border: 1px solid $light-gray;
   border-radius: $border-radius;
   display: flex;
-  padding: 20px;
+  padding: $spacing-md;
 
-  .text-block {
-    margin-right: auto;
-  }
+  // .text-block {
+  //   margin-right: auto;
+  // }
 
   .line-1, .line-2 {
     background: $medium-gray;
     border-radius: $border-radius;
-    height: 18px;
+    height: 20px;
   }
 
   .line-1 {
@@ -127,6 +127,7 @@
   }
 
   .button {
+    margin-bottom: 0;
     margin-left: auto;
   }
 }
