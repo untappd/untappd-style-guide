@@ -56,9 +56,10 @@ input[type="submit"] {
   }
 }
 
-.primary,
-.success,
-.alert {
+.button.primary,
+.button.secondary,
+.button.success,
+.button.alert {
   font-weight: 600;
 }
 
