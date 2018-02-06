@@ -8,10 +8,17 @@
     <title>Untappd Style Guide</title>
 
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag 'styleguide/application' %>
+    <%= javascript_include_tag 'http://localhost:8080/theme.bundle.js' %>
+    <%= stylesheet_link_tag 'http://localhost:8080/theme.css' %>
+    <%= stylesheet_link_tag 'http://localhost:8080/styleguide.css' %>
 
     <style>
       <%= Rouge::Themes::Github.render(scope: '.highlight') %>
+
+      .highlight.html table {
+        font-size: 14px;
+      }
+
       #grid-docs .row {
         background: #f9f9f9;
         border: 1px solid #c6c6c6;

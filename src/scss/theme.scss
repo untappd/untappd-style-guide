@@ -1,7 +1,8 @@
 @import 'fonts';
 @import 'settings';
-@import 'foundation/foundation';
-@include foundation-everything;
+@import '~foundation-sites/scss/foundation';
+@include foundation-everything($flex: false);
+@include foundation-grid;
 @import 'variables';
 @import 'mixins';
 @import 'header';
@@ -20,8 +21,8 @@
 @import 'breadcrumbs';
 @import 'rows';
 
-#buttons {
-  .button {
-    margin-bottom: 20px;
-  }
-}
+// #buttons {
+//   .button {
+//     margin-bottom: 20px;
+//   }
+// }

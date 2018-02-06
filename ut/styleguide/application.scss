@@ -1,4 +1,5 @@
-@import '../stylesheets/theme';
+@import '../../src/scss/variables';
+@import '../../src/scss/settings';
 
 #sidebar {
   margin-top: $spacing-lg;
@@ -48,8 +49,13 @@ a {
 
 .toggle-code {
   margin: $spacing-md 0;
+  color: $blue;
+  font-weight: 500;
 }
 
+.toggle-code-wrapper {
+  margin-top: 1rem;
+}
 
 #back-top {
   bottom: 20px;

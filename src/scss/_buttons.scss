@@ -1,13 +1,15 @@
-input[type="submit"] {
+input[type='submit'] {
   margin-bottom: 0;
 }
 
 .button {
   background: $blue;
   border: 1px solid transparent;
-  color: #fff;
+  color: $white;
   font-size: 1em;
-  padding: .6em 1em;
+  // padding: 0.6em 1em;
+  // padding-top: 0.6em;
+  // padding-bottom: 0.7em;
   position: relative;
   transition: $transition;
 

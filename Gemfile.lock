@@ -103,9 +103,6 @@ GEM
       ffi (>= 0.5.0)
     rouge (1.10.1)
     sass (3.4.23)
-    scss_lint (0.48.0)
-      rake (>= 0.9, < 12)
-      sass (~> 3.4.15)
     servolux (0.13.0)
     sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
@@ -129,10 +126,9 @@ DEPENDENCIES
   middleman-livereload
   middleman-sprockets (~> 4.0.0.rc.1)
   middleman-syntax
-  scss_lint
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.5.0p0
 
 BUNDLED WITH
-   1.13.7
+   1.16.1

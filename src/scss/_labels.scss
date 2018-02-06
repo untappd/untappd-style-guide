@@ -1,18 +1,21 @@
 .label {
   border-radius: 10px;
   font-weight: 600;
-  padding: 0.33333rem 0.5rem 0.2rem 0.5rem;
   text-transform: uppercase;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.label.primary {
-  background: $blue;
+.label.primary,
+.label.success {
+  color: $white;
 }
 
 .label.secondary {
   background: darken($secondary-color, 15%);
 }
 
-.label.warning, .label.secondary {
+.label.warning,
+.label.secondary {
   color: $white;
 }
