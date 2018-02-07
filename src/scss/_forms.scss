@@ -13,7 +13,7 @@ fieldset {
 
 .form-actions {
   span {
-    margin-left: .5em;
+    margin-left: 0.5em;
   }
 }
 
@@ -41,7 +41,7 @@ fieldset {
   left: 0;
   position: absolute;
   top: 4px;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   width: 22px;
 }
 
@@ -70,7 +70,7 @@ fieldset {
 
 .control input:disabled ~ .control-indicator {
   pointer-events: none;
-  opacity: .6;
+  opacity: 0.6;
   background: $light-gray;
   border-color: $medium-gray;
 }
@@ -110,4 +110,10 @@ fieldset {
 
 .control-radio input:disabled ~ .control-indicator:after {
   background: $dark-gray;
+}
+
+form {
+  label {
+    font-weight: 500;
+  }
 }
