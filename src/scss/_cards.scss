@@ -52,14 +52,14 @@
 
       &:active {
         background: transparent;
-        border-bottom: 2px solid $anchor-color;
+        border-bottom: 2px solid $brand;
         top: 1px;
       }
     }
 
     .is-active a {
       background: transparent;
-      border-bottom: 2px solid $anchor-color;
+      border-bottom: 2px solid $brand;
     }
   }
 
