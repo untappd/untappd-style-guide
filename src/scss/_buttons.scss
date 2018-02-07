@@ -35,9 +35,13 @@ input[type='submit'] {
     color: $white;
     border: 1px solid darken($blue, 12%);
   }
+}
 
-  &:disabled {
-    color: $white !important;
+.button[disabled].primary {
+  color: white;
+
+  &:hover {
+    color: white;
   }
 }
 
@@ -56,6 +60,16 @@ input[type='submit'] {
 
   &:active {
     box-shadow: $box-shadow-active;
+  }
+}
+
+.button[disabled].secondary {
+  background: white;
+  color: $blue;
+
+  &:hover {
+    background: white;
+    color: $blue;
   }
 }
 
