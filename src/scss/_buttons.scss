@@ -92,6 +92,10 @@ input[type='submit'] {
   }
 }
 
+.form-actions .button {
+  margin-bottom: 0;
+}
+
 .button.alert {
   border: 1px solid transparent;
   color: #fff;
