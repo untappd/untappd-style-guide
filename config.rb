@@ -12,8 +12,9 @@ page '/*.txt', layout: false
 set :source, 'ut'
 
 set :markdown_engine, :kramdown
+set :markdown, fenced_code_blocks: true, smartypants: true
 
-activate :syntax, line_numbers: true
+activate :syntax, line_numbers: false
 
 require 'middleman-syntax'
 
@@ -23,19 +24,16 @@ helpers do
     html = Middleman::Syntax::Highlighter.highlight(content, 'html')
 
     concat_content content
-    concat_content "<a href='#' class='toggle-code button secondary'>Toggle code</a>\n"
+    concat_content "<div class='toggle-code-wrapper'><a href='#' class='toggle-code'>Toggle code</a></div>\n"
     concat_content html
   end
 end
 
-activate :sprockets
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ?
+         "./node_modules/webpack/bin/webpack.js --bail" :
+         "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+         source: ".tmp/dist",
+         latency: 1
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
-
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-end

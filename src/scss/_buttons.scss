@@ -1,0 +1,128 @@
+input[type='submit'] {
+  margin-bottom: 0;
+}
+
+.button {
+  background: $blue;
+  border: 1px solid transparent;
+  color: $white;
+  font-size: 1em;
+  position: relative;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    border: 1px solid darken($blue, 12%);
+    box-shadow: $box-shadow-hover;
+    color: #fff;
+    top: -1px;
+  }
+
+  &:active {
+    box-shadow: $box-shadow-active;
+  }
+}
+
+.button.primary {
+  background: $blue;
+  border: 1px solid transparent;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: $white;
+    border: 1px solid darken($blue, 12%);
+  }
+}
+
+.button[disabled].primary {
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.button.secondary {
+  background: white;
+  border: 1px solid $light-gray;
+  color: $blue;
+
+  &:hover,
+  &:focus {
+    background: $lightest-gray;
+    border: 1px solid $medium-gray;
+    color: $blue;
+    top: -1px;
+  }
+
+  &:active {
+    box-shadow: $box-shadow-active;
+  }
+}
+
+.button[disabled].secondary {
+  background: white;
+  color: $blue;
+
+  &:hover {
+    background: white;
+    color: $blue;
+  }
+}
+
+.button.primary,
+.button.secondary,
+.button.success,
+.button.alert {
+  font-weight: 500;
+}
+
+.button.success {
+  border: 1px solid transparent;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: $green;
+    border: 1px solid $dark-green;
+    color: $white;
+  }
+}
+
+.form-actions .button {
+  margin-bottom: 0;
+}
+
+.button.alert {
+  border: 1px solid transparent;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background: $alert-color;
+    border: 1px solid darken($alert-color, 20%);
+    color: white;
+  }
+}
+
+.button-group {
+  .button {
+    border-radius: 0;
+
+    &:first-child {
+      border-radius: $global-radius 0 0 $global-radius;
+    }
+
+    &:last-child {
+      border-radius: 0 $global-radius $global-radius 0;
+    }
+  }
+}
+
+.icon {
+  margin: -2px 7px 0 0;
+  vertical-align: middle;
+}

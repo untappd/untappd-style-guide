@@ -1,0 +1,119 @@
+.help-text {
+  color: $dark-gray;
+  font-style: normal;
+  margin-top: 4px;
+}
+
+fieldset {
+  border: 1px solid $light-gray;
+  border-radius: $border-radius;
+  margin-bottom: 10px;
+  padding: 5px 20px 10px;
+}
+
+.form-actions {
+  span {
+    margin-left: 0.5em;
+  }
+}
+
+// Checkboxes & Radios
+
+.control {
+  font-size: 1em;
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control-indicator {
+  background: white;
+  border: 1px solid $medium-gray;
+  height: 22px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  transition: background-color 0.3s ease;
+  width: 22px;
+}
+
+.control-radio .control-indicator {
+  border-radius: 50%;
+}
+
+.control-checkbox .control-indicator {
+  border-radius: $border-radius;
+}
+
+.control:hover input ~ .control-indicator,
+.control input:focus ~ .control-indicator {
+  background: $light-gray;
+}
+
+.control input:checked ~ .control-indicator {
+  background: $blue;
+  border-color: $blue;
+}
+
+.control:hover input:not([disabled]):checked ~ .control-indicator,
+.control input:checked:focus ~ .control-indicator {
+  background: $blue;
+}
+
+.control input:disabled ~ .control-indicator {
+  pointer-events: none;
+  opacity: 0.6;
+  background: $light-gray;
+  border-color: $medium-gray;
+}
+
+.control-indicator:after {
+  position: absolute;
+  display: none;
+  content: '';
+}
+
+.control input:checked ~ .control-indicator:after {
+  display: block;
+}
+
+.control-checkbox .control-indicator:after {
+  top: 3px;
+  left: 7px;
+  width: 5px;
+  height: 11px;
+  transform: rotate(45deg);
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
+
+.control-checkbox input:disabled ~ .control-indicator:after {
+  border-color: $dark-gray;
+}
+
+.control-radio .control-indicator:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.control-radio input:disabled ~ .control-indicator:after {
+  background: $dark-gray;
+}
+
+form {
+  label {
+    font-weight: 500;
+  }
+}

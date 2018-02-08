@@ -8,10 +8,17 @@
     <title>Untappd Style Guide</title>
 
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag 'styleguide/application' %>
+
+    <%= stylesheet_link_tag 'theme.css' %>
+    <%= stylesheet_link_tag 'styleguide.css' %>
 
     <style>
       <%= Rouge::Themes::Github.render(scope: '.highlight') %>
+
+      .highlight.html table {
+        font-size: 14px;
+      }
+
       #grid-docs .row {
         background: #f9f9f9;
         border: 1px solid #c6c6c6;
@@ -43,7 +50,9 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
-    <%= javascript_include_tag :all %>
+
+    <%= javascript_include_tag 'theme.bundle.js' %>
+    <%= javascript_include_tag 'main.bundle.js' %>
   </head>
 
   <body>

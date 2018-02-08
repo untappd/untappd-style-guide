@@ -1,0 +1,87 @@
+.beige-bg {
+  background: $beige;
+  margin-bottom: $spacing-lg;
+  padding: 20px 25px;
+}
+
+// Cards
+
+.card {
+  @include card;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .header {
+    @include clearfix;
+    background: $lightest-gray;
+    border-bottom: 1px solid lighten($light-gray, 3%);
+    border-radius: $global-radius;
+    padding: $spacing-md $spacing-md $spacing-md $spacing-lg;
+
+    h4 {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+
+    .label {
+      margin-top: 7px;
+    }
+
+    .button {
+      margin: 0;
+    }
+  }
+
+  .tabs {
+    background: transparent;
+    border: 0;
+
+    .tabs-title > a {
+      border-bottom: 2px solid transparent;
+      color: $black;
+      font-size: 1em;
+      margin-right: 5px;
+      padding: .6rem;
+      position: relative;
+
+      &:hover {
+        background: transparent;
+        border-bottom: 2px solid $medium-gray;
+      }
+
+      &:active {
+        background: transparent;
+        border-bottom: 2px solid $brand;
+        top: 1px;
+      }
+    }
+
+    .is-active a {
+      background: transparent;
+      border-bottom: 2px solid $brand;
+    }
+  }
+
+  .content {
+    padding: $spacing-lg;
+  }
+
+  .tabs-content {
+    border: 0;
+  }
+
+  .tabs-panel {
+    padding: 0;
+  }
+
+  .footer {
+    border-top: 1px solid $light-gray;
+    padding: $spacing-md $spacing-lg $spacing-md $spacing-md;
+
+    button,
+    .button {
+      margin: 0 5px 0 0;
+    }
+  }
+}

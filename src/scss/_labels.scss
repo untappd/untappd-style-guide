@@ -1,0 +1,21 @@
+.label {
+  border-radius: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.label.primary,
+.label.success {
+  color: $white;
+}
+
+.label.secondary {
+  background: darken($secondary-color, 15%);
+}
+
+.label.warning,
+.label.secondary {
+  color: $white;
+}
