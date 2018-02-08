@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:nextglass/untappd-style-guide.git",
-  "author": "Drew Hamlett <i@drewh.me>",
+  "author": "Untappd",
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.28.9",
