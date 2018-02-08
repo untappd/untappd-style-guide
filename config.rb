@@ -12,8 +12,9 @@ page '/*.txt', layout: false
 set :source, 'ut'
 
 set :markdown_engine, :kramdown
+set :markdown, fenced_code_blocks: true, smartypants: true
 
-activate :syntax, line_numbers: true
+activate :syntax, line_numbers: false
 
 require 'middleman-syntax'
 
@@ -31,19 +32,8 @@ end
 activate :external_pipeline,
          name: :webpack,
          command: build? ?
-         "./node_modules/webpack/bin/webpack.js --bail -p" :
-         "./node_modules/webpack-dev-server/bin/webpack-dev-server.js -d --progress --color",
+         "./node_modules/webpack/bin/webpack.js --bail" :
+         "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
          source: ".tmp/dist",
          latency: 1
 
-# activate :sprockets
-
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
-
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end

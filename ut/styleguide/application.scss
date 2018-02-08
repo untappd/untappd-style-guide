@@ -81,3 +81,18 @@ a {
 .label-container {
   margin-bottom: 20px;
 }
+
+.highlight.html {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+code,
+kbd,
+pre,
+samp {
+  margin-top: 5px;
+  background: none;
+  border: 0;
+  font-size: 15px !important;
+}
