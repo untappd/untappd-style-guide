@@ -35,9 +35,13 @@ input[type='submit'] {
     color: $white;
     border: 1px solid darken($blue, 12%);
   }
+}
 
-  &:disabled {
-    color: $white !important;
+.button[disabled].primary {
+  color: white;
+
+  &:hover {
+    color: white;
   }
 }
 
@@ -59,6 +63,16 @@ input[type='submit'] {
   }
 }
 
+.button[disabled].secondary {
+  background: white;
+  color: $blue;
+
+  &:hover {
+    background: white;
+    color: $blue;
+  }
+}
+
 .button.primary,
 .button.secondary,
 .button.success,
@@ -76,6 +90,10 @@ input[type='submit'] {
     border: 1px solid $dark-green;
     color: $white;
   }
+}
+
+.form-actions .button {
+  margin-bottom: 0;
 }
 
 .button.alert {
