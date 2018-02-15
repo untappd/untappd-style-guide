@@ -52,8 +52,8 @@ input[type='submit'] {
 
   &:hover,
   &:focus {
-    background: $lightest-gray;
-    border: 1px solid $medium-gray;
+    background: $white;
+    border: 1px solid darken($lightest-gray, 12%);
     color: $blue;
     top: -1px;
   }
@@ -87,7 +87,7 @@ input[type='submit'] {
   &:hover,
   &:focus {
     background: $green;
-    border: 1px solid $dark-green;
+    border: 1px solid darken($green, 12%);
     color: $white;
   }
 }
@@ -103,7 +103,7 @@ input[type='submit'] {
   &:hover,
   &:focus {
     background: $alert-color;
-    border: 1px solid darken($alert-color, 20%);
+    border: 1px solid darken($alert-color, 12%);
     color: white;
   }
 }
