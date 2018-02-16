@@ -1,0 +1,33 @@
+.status {
+  border-radius: 50%;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+}
+
+.status.pending {
+  background: $brand;
+}
+
+.status.accepted {
+  background: $green;
+}
+
+.status.modified {
+  border: 2px solid $green;
+
+  .inner {
+    background: $green;
+    border-radius: 50%;
+    display: block;
+    height: 6px;
+    left: 2px;
+    position: relative;
+    top: 2px;
+    width: 6px;
+  }
+}
+
+.status.rejected {
+  background: $alert-color;
+}

@@ -4,6 +4,7 @@
   text-transform: uppercase;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  text-shadow: 1px 1px rgba(0,0,0,.15);
 }
 
 .label.primary,
@@ -16,6 +17,7 @@
 }
 
 .label.warning,
-.label.secondary {
+.label.secondary,
+.label.alert {
   color: $white;
 }

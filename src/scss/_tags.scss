@@ -1,0 +1,18 @@
+.tag {
+  border-radius: $border-radius;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: .5rem .75rem;
+  text-shadow: 1px 1px rgba(0,0,0,.15);
+  text-transform: uppercase;
+}
+
+.tag.primary {
+  background: $green;
+}
+
+.tag.secondary {
+  background: darken($secondary-color, 15%);
+}
