@@ -1,6 +1,6 @@
 @import 'fonts';
 @import 'settings';
-@import 'foundation-sites/scss/foundation';
+@import '~foundation-sites/scss/foundation';
 @include foundation-everything($flex: false);
 @include foundation-grid;
 @import 'variables';
