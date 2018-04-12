@@ -1,0 +1,40 @@
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Ellipse</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-22722 5712)">
+<rect x="22722" y="-5712" width="32" height="32" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 22093 -5924L 23383 -5924L 23383 -4988L 22093 -4988L 22093 -5924Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Error Page" clip-path="url(#clip-0)">
+<path d="M 22093 -5924L 23383 -5924L 23383 -4988L 22093 -4988L 22093 -5924Z" fill="#F7F7F7"/>
+<g id="atom/component/card">
+<g id="Rectangle" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="translate(22138 -5812)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group 3">
+<g id="Ellipse">
+<use xlink:href="#path1_fill" transform="translate(22722 -5712)" fill="#E25858"/>
+</g>
+<g id="!">
+<use xlink:href="#path2_fill" transform="translate(22735 -5710)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="22132" y="-5817" width="1212" height="346" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="3"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 0 0L 1200 0L 1200 334L 0 334L 0 0Z"/>
+<path id="path1_fill" d="M 32 16C 32 24.8366 24.8366 32 16 32C 7.16344 32 0 24.8366 0 16C 0 7.16344 7.16344 0 16 0C 24.8366 0 32 7.16344 32 16Z"/>
+<path id="path2_fill" d="M 4.09059 17.104L 4.52259 5.992L 1.45059 5.992L 1.90659 17.104L 4.09059 17.104ZM 2.98659 22.24C 3.89859 22.24 4.66659 21.472 4.66659 20.584C 4.66659 19.672 3.89859 18.904 2.98659 18.904C 2.07459 18.904 1.33059 19.672 1.33059 20.584C 1.33059 21.472 2.07459 22.24 2.98659 22.24Z"/>
+</defs>
+</svg>
